@@ -26,21 +26,21 @@ keywords:
 > 构    
 
 
-<!--lang: python-->
         def test():
             print('test1')
 
 
-```python
-        def test():
-            print('test2')
+```c
+/* hello world demo */
+#include <stdio.h>
+int main(int argc, char **argv)
+{
+    printf("Hello, World!\n");
+    return 0;
+}
 ```
 
 
-        ```python
-        def test():
-            print('test3')
-        ```
 
 <pre><code>
 def test():
