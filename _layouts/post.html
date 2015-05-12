@@ -3,7 +3,7 @@ layout: default
 ---
 <h2 class="uk-article-title">{{ page.title }}</h2>
 {% for pagetag in page.tag %}
-<a class="uk-badge" href="{{ pagetag.url }}">{{ pagetag.txt}}</a>
+<a class="uk-badge" href="{{ pagetag }}" target="_blank">{{ pagetag }}</a>
 {% endfor %}
 <hr/>
 <article class="uk-article markdown-body">
