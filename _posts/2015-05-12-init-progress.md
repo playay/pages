@@ -25,14 +25,14 @@ keywords:
 > 结    
 > 构    
 
-``` 
+```   
 def test():    
     print('test')    
 
 ```
 
 
-``` python
+``` python   
 def test():    
     print('test')    
 
