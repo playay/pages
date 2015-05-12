@@ -26,12 +26,21 @@ keywords:
 > 构    
 
 
-
+<!--lang: python-->
         def test():
             print('test1')
 
 
+```python
+        def test():
+            print('test2')
+```
 
+
+        ```python
+        def test():
+            print('test3')
+        ```
 
 <pre><code>
 def test():
