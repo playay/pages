@@ -25,24 +25,15 @@ keywords:
 > 结    
 > 构    
 
-```   
-def test():    
-    print('test')    
 
-```
-
-
-``` python   
-def test():    
-    print('test')    
-
-```
 
 ```python
-def test():    
-    print('test')    
+def test():
+    print('test')
 
 ```
+
+
 
 <pre><code>
 def test():
