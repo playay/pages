@@ -15,12 +15,11 @@
     <link rel="stylesheet" href="/css/md.css">
 
 </head>
-<body class="uk-container uk-container-center">
+<body class="uk-container">
     {% include header.html %}
     <div class="uk-grid-small">
-    <div class="uk-width-1-3 uk-placeholder"></div>
-    <hr class="uk-grid-divider">
-    <div class="uk-width-2-3">{{ content }}</div>
+        <div class="uk-width-1-3 uk-placeholder uk-grid-divider"></div>
+        <div class="uk-width-2-3">{{ content }}</div>
     </div>
     {% include footer.html %}
 </body>
