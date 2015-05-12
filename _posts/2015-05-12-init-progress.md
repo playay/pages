@@ -1,8 +1,8 @@
 ---
 layout: post
 title: init progress 
-tag: test
-keywords: init, test
+tag: test, page 
+keywords: init test
 ---
 
 #初

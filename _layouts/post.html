@@ -2,7 +2,8 @@
 layout: default
 ---
     <h3>{{ page.title }}</h3>
-    <p>{{ page.tag }}</p><br/>
+    <code>{{ page.tag | join: '</code><code>'}}</code>
+    <hr/>
     <article class="markdown-body">
     {{ content }}
     </article>
