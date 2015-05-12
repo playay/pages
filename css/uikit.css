@@ -1,5 +1,4 @@
 html {
-  height: 100%;
   font: normal 14px / 20px "Helvetica Neue", Helvetica, Arial, sans-serif;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
@@ -7,6 +6,7 @@ html {
   color: #444444;
 }
 body {
+  height: 100%;
   margin: 0;
 }
 a {
