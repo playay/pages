@@ -2,8 +2,12 @@
 layout: post
 title: init progress 
 tag:
-    - test 
-    - page 
+    - test:
+        - url: /
+        - txt: text
+    - page:
+        - url: /
+        - txt: page 
 keywords:
     - init
     - test
