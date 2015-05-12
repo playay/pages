@@ -26,3 +26,7 @@ keywords:
 
 > 构
 
+```python
+def test():
+    print('test')
+```
