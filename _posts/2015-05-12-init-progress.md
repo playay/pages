@@ -27,7 +27,7 @@ keywords:
 
 
 
-```python
+```
 def test():
     print('test')
 
