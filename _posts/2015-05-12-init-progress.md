@@ -26,9 +26,14 @@ keywords:
 > 构    
 
 
-        def test():
-            print('test1')
+    def test():
+        print('test1')
 
+```python
+def hello():
+    pass
+
+```
 
 ```c
 /* hello world demo */
