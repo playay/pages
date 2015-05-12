@@ -1,5 +1,5 @@
 ---
-layout: post.html
+layout: post
 title: init progress 
 keywords: init
 ---
