@@ -2,7 +2,8 @@
 layout: default
 ---
 <h2 class="uk-article-title">{{ page.title }}</h2>
-<p class="uk-badge">{{ page.tag }}</p>
+<p class="uk-badge">{{ page.tag | join: '</p>&nbsp;&nbsp;&nbsp;&nbsp;<p class="uk-article-meta uk-badge">'}}</p>
+<hr/>
 <article class="uk-article markdown-body">
 {{ content }}
 </article>
