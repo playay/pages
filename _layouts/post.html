@@ -1,9 +1,9 @@
 ---
 layout: default
 ---
-    <h3>{{ page.title }}</h3>
-    <code>{{ page.tag | join: '</code><code>'}}</code>
-    <hr/>
-    <article class="markdown-body">
-    {{ content }}
-    </article>
+<article class="uk-article, markdown-body">
+<h3 class="uk-article-title">{{ page.title }}</h3>
+<p class="uk-article-meta">{{ page.tag | join: ' | '}}</p>
+<hr class="uk-article-divider"/>
+{{ content }}
+</article>
