@@ -4,7 +4,6 @@
     <meta charset="utf-8">
     <meta name="hostname" content="feling.net">
     <meta name="keywords" content="{{ page.keywords | join: ',' }}" />
-    
     <title>
     {% if page.title %}
         {{ page.title }}
@@ -12,10 +11,12 @@
         {{ site.title }}
     {% endif %}         
     </title>
+    <link rel="stylesheet" href="/css/md.css">
+
 </head>
+<body>
     {% include header.html %}
-    
     {{ content }}
-    
     {% include footer.html %}
+</body>
 </html>

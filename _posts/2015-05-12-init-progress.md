@@ -1,7 +1,8 @@
 ---
 layout: post
 title: init progress 
-keywords: init
+tag: test
+keywords: init, test
 ---
 
 #初
@@ -18,7 +19,6 @@ keywords: init
 2. 录    
 
 > 结
-
 
 > 构
 
