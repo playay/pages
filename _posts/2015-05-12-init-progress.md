@@ -23,10 +23,9 @@ keywords:
 2. 录    
 
 > 结
-
 > 构
 
-```python
+```
 def test():
     print('test')
 ```
