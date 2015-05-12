@@ -26,7 +26,6 @@ keywords:
 > 构    
 
 ``` 
-
 def test():    
     print('test')    
 
@@ -34,14 +33,12 @@ def test():
 
 
 ``` python
-
 def test():    
     print('test')    
 
 ```
 
 ```python
-
 def test():    
     print('test')    
 
