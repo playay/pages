@@ -1,10 +1,8 @@
 ---
-layout: default
+layout: default_with_right
 ---
 <h2 class="uk-article-title">{{ page.title }}</h2>
-{% for pagetag in page.tag %}
-<a class="uk-badge" href="/tag/{{ pagetag }}" target="_blank">{{ pagetag }}</a>&nbsp;
-{% endfor %}
+<p class="uk-article-meta">{{ page.date }}</p>
 <hr/>
 <article class="uk-article markdown-body">
 {{ content }}

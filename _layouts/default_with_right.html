@@ -27,7 +27,8 @@
 <body >
     {% include header.html %}
     <div class="uk-flex uk-grid uk-container uk-container-center">
-        {{ content }}
+        <div class="uk-width-medium-1-4">{% include right.html %}</div>
+        <div class="uk-width-medium-3-4">{{ content }}</div>
     </div>
     {% include footer.html %}
 </body>
