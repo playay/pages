@@ -5,9 +5,8 @@
 </head>
 <body >
     {% include header.html %}
-    <div class="uk-flex uk-grid uk-container uk-container-center">
-    <div class="uk-grid uk-grid-divider"></div>
-        <div class="uk-width-1-4 uk-grid-divider" >{% include right.html %}</div><div class="uk-grid-divider"></div>
+    <div class="uk-flex uk-grid uk-grid-divider uk-container uk-container-center">
+        <div class="uk-width-1-4 uk-grid-divider" >{% include right.html %}</div>
         <div class="uk-width-3-4">{{ content }}</div>
     </div>
     {% include footer.html %}
