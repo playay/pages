@@ -1308,6 +1308,7 @@ html:not(.uk-touch) .uk-nav-offcanvas ul a:hover {
   height: 40px;
   padding: 0 15px;
   float: left;
+  color: #ffffff;
 }
 .uk-navbar-content:before,
 .uk-navbar-brand:before,
