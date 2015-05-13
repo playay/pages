@@ -1,7 +1,7 @@
 ---
 layout: post
 title: init progress 
-date: 2015-05-12
+pub_date: 2015-05-12
 tag:
     - test
     - page
