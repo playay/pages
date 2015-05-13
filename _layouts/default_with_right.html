@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <meta name="hostname" content="feling.net">
+    <meta name="hostname" content="pages.feling.net">
     <meta name="keywords" content="{{ page.keywords | join: ',' }}" />
     <title>
     {% if page.title %}
@@ -26,8 +26,8 @@
 </head>
 <body >
     {% include header.html %}
-    <div class="uk-flex uk-grid uk-container uk-container-center">
-        <div class="uk-width-1-4">{% include right.html %}</div>
+    <div class="uk-flex uk-grid-small uk-container uk-container-center">
+        <div class="uk-width-1-4" >{% include right.html %}</div>
         <div class="uk-width-3-4">{{ content }}</div>
     </div>
     {% include footer.html %}
