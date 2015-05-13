@@ -12,7 +12,7 @@ keywords:
 
 
 
-<script async src="https://gist.github.com/chenyanclyz/f0b6c17e59ceb3fed279.js"></script>
+<script defer src="https://gist.github.com/chenyanclyz/f0b6c17e59ceb3fed279.js"></script>
 
 <pre><code>
 def test():
