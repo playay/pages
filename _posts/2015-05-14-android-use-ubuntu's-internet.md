@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 安卓设备使用ubuntu PC的网络(通过USB)
+title: 安卓设备通过USB使用ubuntu电脑的网络
 pub_date: 2015-05-14
 tag: 玩机
 keywords:
