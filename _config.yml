@@ -1,5 +1,5 @@
 title:          feling.net
-exclude:        ['README.md', 'LICENSE', 'CNAME']
+exclude:        ['README.md', 'CNAME']
 timezone:       Asia/shanghai
 encoding:       'utf-8'
 url:            http://pages.feling.net
