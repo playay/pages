@@ -5102,6 +5102,7 @@ a.uk-thumbnail:focus {
   }
 }
 .uk-modal-header {
+  width: 100%;
   position: fixed;
   background: #3399ff;
 }
