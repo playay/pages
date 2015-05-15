@@ -5104,7 +5104,7 @@ a.uk-thumbnail:focus {
 }
 .uk-modal-header {
   margin-bottom: 15px;
-  position: absolute;
+  position: fixed;
   width:100%;
 }
 .uk-modal-footer {
