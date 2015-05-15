@@ -26,6 +26,7 @@ keywords:
 
 ####电脑上的设置
 1. 切换到root用户(接下来的步骤还是切换到root用户操作比较方便, 虽然我一般不在root用户下操作, 但在这里还是投降了...)    
+
 2. 启用ipv4的转发:     
 <script src="https://gist.github.com/chenyanclyz/d93e891fafbd3dd27427.js"></script>
 
@@ -42,7 +43,7 @@ keywords:
 1. 可以通过adb shell控制设备(还是要在root用户下, 因为部分手机启用usb网络共享后, 普通用户没有使用adb的权限)    
 2. `su` 获取root权限
 3. 添加默认网关(电脑上usb1的ip地址):    
-
+<script src="https://gist.github.com/chenyanclyz/8678215c32dfa373b3c1.js"></script>
 
 ###三、自动化脚本
 按自己的系统环境修改一下变量，在root用户下运行:    
