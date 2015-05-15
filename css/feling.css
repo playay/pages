@@ -26,7 +26,7 @@ div.go-top div.arrow {
     width: 0;
     height: 0;
     border: 9px solid transparent;
-    border-bottom-color: #cc3333;
+    border-bottom-color: #3399ff;
 }
 
 div.go-top div.stick {
@@ -36,7 +36,7 @@ div.go-top div.stick {
     width: 8px;
     height: 14px;
     display: block;
-    background-color: #cc3333;
+    background-color: #3399ff;
     -webkit-border-radius: 1px;
     -moz-border-radius: 1px;
     border-radius: 1px;
