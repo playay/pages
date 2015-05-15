@@ -4,7 +4,7 @@ div.go-top {
     z-index: 999999;
     position: fixed;
     bottom: 113px;
-    left: 90%;
+    right: 10%;
     margin-left: 40px;
     border: 1px solid #3399ff;
     width: 38px;
