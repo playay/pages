@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: post_with_left
 title: init progress 
 pub_date: 2015-05-12
 tag:

@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: post_with_left
 title: 安卓设备通过USB使用ubuntu电脑的网络
 pub_date: 2015-05-14
 tag: 玩机
@@ -36,4 +36,8 @@ keywords:
 1. 可以通过adb shell控制设备(还是要在root用户下, 因为部分手机启用usb网络共享后, 普通用户没有使用adb的权限)    
 2. `su` 获取root权限
 3. `busybox route add default gw 192.168.42.121`添加默认网关(电脑上usb1的ip地址)
+
+###三、自动化脚本
+按自己的系统环境修改一下变量，在root用户下运行:    
+<script src="https://gist.github.com/chenyanclyz/4e99e4888681a5e329c9.js"></script>
 
