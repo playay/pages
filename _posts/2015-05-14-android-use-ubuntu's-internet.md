@@ -1,6 +1,6 @@
 ---
 layout: post_with_left
-title: 安卓设备通过USB使用ubuntu电脑的网络
+title: 安卓设备通过USB使用ubuntu电脑的ipv4网络
 pub_date: 2015-05-14
 tag: 玩机
 keywords:
