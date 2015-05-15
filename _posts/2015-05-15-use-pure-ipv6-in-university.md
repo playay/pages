@@ -1,5 +1,5 @@
 ---
-layout: post_with_left
+layout: post
 title: ubuntu系统在校园网使用纯ipv6
 pub_date: 2015-05-15
 tag: 玩机
