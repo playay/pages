@@ -1239,7 +1239,6 @@ html:not(.uk-touch) .uk-nav-offcanvas ul a:hover {
   color: #ffffff;
 }
 .uk-navbar {
-  background: #3399ff;
   color: #444444;
 }
 .uk-navbar:before,
@@ -5104,6 +5103,7 @@ a.uk-thumbnail:focus {
 }
 .uk-modal-header {
   position: fixed;
+  background: #3399ff;
   width: 100%;
 }
 .uk-modal-footer {
