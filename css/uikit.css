@@ -5103,9 +5103,12 @@ a.uk-thumbnail:focus {
   }
 }
 .uk-modal-header {
-  margin-bottom: 15px;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
   position: fixed;
-  width:100%;
+  width: 100%;
 }
 .uk-modal-footer {
   margin-top: 15px;
