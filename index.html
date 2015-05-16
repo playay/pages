@@ -6,10 +6,10 @@ keywords:
 ---
 <div class="uk-grid">
     {% for tag in site.tags %}
-    <div class="uk-width-medium-1-2 uk-panel uk-panel-box" style="word-wrap:break-word;"> 
-        <h3 class="uk-panel-title">{{ tag | first }}</h3>
+    <div class="uk-width-medium-1-2 uk-panel uk-panel-box" style="word-wrap:break-word; margin:20px;"> 
+        <h3 class="uk-panel-title"><i class="uk-icon-bookmark"></i> {{ tag | first | replace:" ","-"  }}</h3>
         <ul>
-        {% for post in site.tags.{{ tag | first }} %}
+        {% for post in site.tags.{{ tag | first | replace:" ","-" }} %}
             <li><a href="{{ post.url }}">{{ post.title }}</a></li>
         {% endfor %}
         </ul>
