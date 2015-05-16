@@ -2,9 +2,9 @@
 layout: default
 ---
 <h2 class="uk-article-title">{{ page.title }}</h2>
-<p class="uk-article-meta">{{ page.date | %Y-%M-%D }} | 
+<p class="uk-article-meta">{{ page.date | date: "%Y-%M-%D" }} |
 {% for tag in page.tags %}
-{{ tag | first }}
+{{ tag }}
 {% endfor%}
 </p>
 <hr/>
