@@ -3,7 +3,7 @@
     <h2 class="uk-panel-title">相关文章</h2>
     <ul>
     {% for post in site.posts %}
-        {% assign post_tag = post.tag | first %}
+        {% assign post_tag = post.tags | first %}
         {% if post_tag in page.tags %}
             
             <li><a href="{{ post.url }}">{{ post.title }}</a></li>
