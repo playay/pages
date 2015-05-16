@@ -2,11 +2,9 @@
 <div class="uk-panel uk-panel-box" style="word-wrap:break-word; "> 
     <h2 class="uk-panel-title">相关文章</h2>
     <ul>
-    {% assign limit = 0 %}
     {% for t in page.tags %}
     {% for post in site.tags[t] %}
-        {% if post.title != page.title and limit <= 2 %}
-            {% limit = limit + 1 %}
+        {% if post.title != page.title %}
             <li><a href="{{ post.url }}">{{ post.title }}</a></li>
         {% endif %}
     {% endfor %}
