@@ -1,12 +1,8 @@
 ---
 layout: post_with_left
 title: init progress 
-pub_date: 2015-05-12
-tags:
-    - test
-keywords:
-    - init
-    - test
+tags: test
+keywords: init test
 ---
 
 

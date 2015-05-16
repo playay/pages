@@ -1,13 +1,8 @@
 ---
 layout: post_with_left
 title: 安卓设备通过USB使用ubuntu电脑的ipv4网络
-pub_date: 2015-05-14
 tags: play
-keywords:
-    - 安卓
-    - ubuntu
-    - android
-    - 网络共享
+keywords: 安卓 ubuntu android 网络共享
 ---
 
 ####再一次明确标题: 电脑有网络, 通过USB接口, 共享给没网的手机用
