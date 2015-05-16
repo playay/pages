@@ -1,7 +1,7 @@
 ---
 layout: post_with_left_and_proxy_hint
 title: init progress 
-tags: test
+tags: play proxy
 keywords: init test
 ---
 
