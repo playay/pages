@@ -2,7 +2,11 @@
 layout: default
 ---
 <h2 class="uk-article-title">{{ page.title }}</h2>
-<p class="uk-article-meta">{{ page.pub_date }}</p>
+<p class="uk-article-meta">{{ page.pub_date }} | 
+{% for tag in page.tags %}
+{{ tag | first }}
+{% endfor%}
+</p>
 <hr/>
 <article class="uk-article markdown-body" style="word-wrap:break-word;">
 {{ content }}
