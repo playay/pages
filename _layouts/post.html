@@ -4,7 +4,7 @@ layout: default
 <h2 class="uk-article-title">{{ page.title }}</h2>
 <p class="uk-article-meta">{{ page.date | date: "%Y-%m-%d" }} |
 {% for tag in page.tags %}
-{{ tag }}
+<a class="uk-badge">{{ tag }},&nbsp;&nbsp;</a>
 {% endfor%}
 </p>
 <hr/>
