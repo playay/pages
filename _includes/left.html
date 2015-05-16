@@ -2,7 +2,7 @@
 <div class="uk-panel uk-panel-box" style="word-wrap:break-word; "> 
     <h2 class="uk-panel-title">相关文章</h2>
     <ul>
-    {% for post in site.posts limit:5 %}
+    {% for post in site.posts limit:2 %}
     {% if post.title != page.title %}
             <li><a href="{{ post.url }}">{{ post.title }}</a></li>
     {% endif %}
