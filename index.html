@@ -10,7 +10,6 @@ keywords:
     {% assign p = tag | last %}
     <div id="{{ t }}" class="uk-panel uk-panel-box" style="word-wrap:break-word; margin:20px;"> 
         <h3 class="uk-panel-title uk-panel-header"><i class="uk-icon-bookmark"></i>&nbsp;&nbsp;&nbsp;&nbsp;{{ t }}</h3>
-        <hr style="margin: 0;"/>
         <ul>
         {% for post in p %}
             <li><a href="{{ post.url }}">{{ post.title }}</a></li>
