@@ -2,9 +2,9 @@
 layout: default_with_left
 ---
 <h2 class="uk-article-title">{{ page.title }}</h2>
-<p class="uk-article-meta">{{ page.date | date: "%Y-%m-%d" }} | 
+<p class="uk-article-meta">{{ page.date | date: "%Y-%m-%d" }}&nbsp;&nbsp;|&nbsp;&nbsp;
 {% for tag in page.tags %}
-{{ tag }}
+<a class="uk-badge" href="/#{{ tag }}">{{ tag }}</a>&nbsp;&nbsp;&nbsp;&nbsp;
 {% endfor%}
 </p>
 <hr/>
