@@ -4,9 +4,29 @@ keywords:
     - feling.net
     - pages.feling.net
 ---
+
+<div class="uk-panel-box" style="word-wrap:break-word;"> 
 <ul>
-{% for post in site.posts %}
+{% for post in site.tags.代理 %}
 <li><a href="{{ post.url }}">{{ post.title }}</a></li>
 {% endfor %}
 </ul>
+</div>
+
+<div class="uk-panel-box" style="word-wrap:break-word;"> 
+<ul>
+{% for post in site.tags.test %}
+<li><a href="{{ post.url }}">{{ post.title }}</a></li>
+{% endfor %}
+</ul>
+</div>
+
+<div class="uk-panel-box" style="word-wrap:break-word;"> 
+<ul>
+{% for post in site.tags.玩机 %}
+<li><a href="{{ post.url }}">{{ post.title }}</a></li>
+{% endfor %}
+</ul>
+</div>
+
 <br/>TODO: 分页、分类、新的gist插入方式

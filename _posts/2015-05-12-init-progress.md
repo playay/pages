@@ -2,9 +2,8 @@
 layout: post_with_left
 title: init progress 
 pub_date: 2015-05-12
-tag:
+tags:
     - test
-    - page
 keywords:
     - init
     - test
