@@ -2,10 +2,9 @@
 <div class="uk-panel uk-panel-box" style="word-wrap:break-word; "> 
     <h2 class="uk-panel-title">相关文章</h2>
     <ul>
-    {% assign count = 0 %}
     {% for post in site.posts %}
         {% assign post_tag = post.tag | first %}
-        {% if post_tag in page.tags and count <= 1 %}
+        {% if post_tag in page.tags %}
             
             <li><a href="{{ post.url }}">{{ post.title }}</a></li>
         {% endif %}
