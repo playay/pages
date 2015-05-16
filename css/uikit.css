@@ -5104,6 +5104,8 @@ a.uk-thumbnail:focus {
 .uk-modal-header {
   width: 100%;
   top: 0;
+  left: 0;
+  right: 0;
   position: fixed;
   z-index: 999999;
   background: #3399ff;
