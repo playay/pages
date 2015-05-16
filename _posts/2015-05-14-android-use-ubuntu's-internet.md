@@ -28,24 +28,24 @@ keywords:
 1. 切换到root用户(接下来的步骤还是切换到root用户操作比较方便, 虽然我一般不在root用户下操作, 但在这里还是投降了...)    
 
 2. 启用ipv4的转发:     
-{% gist /chenyanclyz/d93e891fafbd3dd27427 ipv4_forward.sh %}
+{% gist chenyanclyz/d93e891fafbd3dd27427 ipv4_forward.sh %}
 
 3. 添加NAT项:    
-{% gist /chenyanclyz/d93e891fafbd3dd27427 nat_insert.sh %}
+{% gist chenyanclyz/d93e891fafbd3dd27427 nat_insert.sh %}
 
 4. 给没网的手机的usb接口分配ip地址:    
-{% gist /chenyanclyz/d93e891fafbd3dd27427 set_ip.sh %}
+{% gist chenyanclyz/d93e891fafbd3dd27427 set_ip.sh %}
 
 另: 查看NAT表项:    
-{% gist /chenyanclyz/d93e891fafbd3dd27427 cat_nat.sh %}
+{% gist chenyanclyz/d93e891fafbd3dd27427 cat_nat.sh %}
 
 ####手机上的设置
 1. 可以通过adb shell控制设备(还是要在root用户下, 因为部分手机启用usb网络共享后, 普通用户没有使用adb的权限)    
 2. `su` 获取root权限
 3. 添加默认网关(电脑上usb1的ip地址):    
-{% gist /chenyanclyz/d93e891fafbd3dd27427 android_add_default_gw.sh %}
+{% gist chenyanclyz/d93e891fafbd3dd27427 android_add_default_gw.sh %}
 
 ###三、自动化脚本
 按自己的系统环境修改一下变量，在root用户下运行:    
-{% gist /chenyanclyz/d93e891fafbd3dd27427 ubuntu_share_net_to_android_via_usb.sh %}
+{% gist chenyanclyz/d93e891fafbd3dd27427 ubuntu_share_net_to_android_via_usb.sh %}
 
