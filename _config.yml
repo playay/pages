@@ -6,6 +6,7 @@ url:            http://pages.feling.net
 ext_cn_site:    http://182.92.214.222
 ext_us_site:    http://us.feling.net
 permalink:      /:year/:month/:day/:title.html
-markdown: redcarpet
+lsi:            true
+markdown:       redcarpet
 redcarpet:
     extensions: ["fenced_code_blocks", "autolink", "tables", "strikethrough"]
