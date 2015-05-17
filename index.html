@@ -3,7 +3,7 @@ layout: default
 keywords: [feling.net, pages.feling.net]
 ---
 <div class="uk-grid">
-    {% for tag in site.tags %}
+    {% for tag in site.tags reversed %}
     {% assign t = tag | first %}
     {% assign p = tag | last %}
     <a id="{{ t }}" class="target-fix"></a>
