@@ -49,11 +49,7 @@
     var level = get_level(headers[0]),
       this_level,
       html = settings.title + " <"+settings.listType+">";
-    headers.on('click', function() {
-      if (!settings.noBackToTopLinks) {
-        window.location.hash = this.id;
-      }
-    })
+    headers
     .addClass('clickable-header')
     .each(function(_, header) {
       this_level = get_level(header);
