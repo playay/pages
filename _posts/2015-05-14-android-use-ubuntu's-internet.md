@@ -4,15 +4,7 @@ title: 安卓设备通过USB使用ubuntu电脑的ipv4网络
 tags: play
 keywords: 安卓 ubuntu android 网络共享
 ---
-
-- 录lh   
-
-{:toc}
-
-
 ####再一次明确标题
-{:.no_toc}
-
 电脑有网络, 通过USB接口, 共享给没网的手机用
 
 
@@ -47,6 +39,7 @@ keywords: 安卓 ubuntu android 网络共享
 2. `su` 获取root权限
 3. 添加默认网关(电脑上usb1的ip地址):    
 {% gist chenyanclyz/4e99e4888681a5e329c9 android_add_default_gw.sh %}
+
 
 ###三、自动化脚本
 按自己的系统环境修改一下变量，在root用户下运行:    
