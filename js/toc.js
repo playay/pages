@@ -61,8 +61,7 @@
         $(header).addClass('top-level-header').after(return_to_top);
       }
       if (this_level === level){ // same level as before; same indenting
-        html += "<li><a href='#" + fixedEncodeURIComponent(header.id) + "'>" + header.innerHTML + "</a>";
-        console.log(header.innerHTML.replace(new RegExp("<a.+?>(.+?)</a>"),"$1"));}
+        html += "<li><a href='#" + fixedEncodeURIComponent(header.id) + "'>" + header.innerHTML.replace(new RegExp("<a.+?>(.+?)</a>"),"$1") + "</a>";
       else if (this_level <= level){ // higher level than before; end parent ol
         for(i = this_level; i < level; i++) {
           html += "</li></"+settings.listType+">"
