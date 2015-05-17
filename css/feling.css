@@ -45,3 +45,12 @@ div.go-top div.stick {
     padding-top:44px;
     overflow:hidden;
 }
+
+.target-fix {
+    position: relative;
+    top: -44px; // 偏移值
+    display: block;
+    height: 0;
+    overflow: hidden;
+}
+

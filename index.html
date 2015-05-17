@@ -6,7 +6,7 @@ keywords: [feling.net, pages.feling.net]
     {% for tag in site.tags %}
     {% assign t = tag | first %}
     {% assign p = tag | last %}
-    <div id="{{ t }}" style="margin-bottom:40px;"></div>
+    <a id="{{ t }}" class="target-fix"></a>
     <div class="uk-panel uk-panel-box" style="word-wrap:break-word;"> 
         <h2 class="uk-panel-title uk-panel-header"><i class="uk-icon-bookmark"></i>&nbsp;&nbsp;&nbsp;{{ t }}</h2>
         <ul>
