@@ -43,6 +43,11 @@ div.go-top div.stick {
 .clickable-header {
   cursor:pointer;
 }
+
+.clickable-header :target{
+    padding-top:44px;
+}
+
 .clickable-header:hover {
   text-decoration:underline;
 }
