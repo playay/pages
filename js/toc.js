@@ -2,7 +2,7 @@
 (function($){
   $.fn.toc = function(options) {
     var defaults = {
-      noBackToTopLinks: false,
+      noBackToTopLinks: true,
       title: '<h2 class="uk-panel-title">本文目录</h2>',
       minimumHeaders: 3,
       headers: 'h3, h4',
