@@ -11,4 +11,4 @@ markdown:       redcarpet
 redcarpet:
     extensions: ["fenced_code_blocks", "autolink", "tables", "strikethrough", "with_toc_data", "html_toc"]
 toc_levels:     3..4
-
+pygments: true
