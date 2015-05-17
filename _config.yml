@@ -10,4 +10,4 @@ lsi:            true
 markdown:       redcarpet
 toc_levels:     3..4
 redcarpet:
-    extensions: ["fenced_code_blocks", "autolink", "tables", "strikethrough"]
+    extensions: ["fenced_code_blocks", "autolink", "tables", "strikethrough", "with_toc_data"]
