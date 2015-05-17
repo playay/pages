@@ -5,11 +5,13 @@ tags: play
 keywords: 安卓 ubuntu android 网络共享
 ---
 - 录hh   
+
 {:toc}
 
 
 ####再一次明确标题
 {:.no_toc}
+
 电脑有网络, 通过USB接口, 共享给没网的手机用
 
 
