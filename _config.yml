@@ -7,7 +7,7 @@ ext_cn_site:    http://182.92.214.222
 ext_us_site:    http://us.feling.net
 permalink:      /:year/:month/:title.html
 lsi:            true
-markdown:       redcarpet
+markdown:       kmarkdown
 toc_levels:     3..4
-redcarpet:
+kmarkdown:
     extensions: ["fenced_code_blocks", "autolink", "tables", "strikethrough"]
