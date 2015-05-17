@@ -62,7 +62,7 @@
       }
       if (this_level === level){ // same level as before; same indenting
         html += "<li><a href='#" + fixedEncodeURIComponent(header.id) + "'>" + header.innerHTML + "</a>";
-        console.log(html);}
+        console.log(header.innerHTML);}
       else if (this_level <= level){ // higher level than before; end parent ol
         for(i = this_level; i < level; i++) {
           html += "</li></"+settings.listType+">"
