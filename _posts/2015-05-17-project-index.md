@@ -14,10 +14,5 @@ keywords: 开源项目 python http代理 gevent
 {{ p.intro }}
 
 
-###{{ p.title }}
-
----
-
-{{ p.intro }}
 {% endif%}
 {% endfor %}
