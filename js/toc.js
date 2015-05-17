@@ -4,8 +4,8 @@
     var defaults = {
       noBackToTopLinks: true,
       title: '<h2 class="uk-panel-title">本文目录</h2>',
-      minimumHeaders: 3,
-      headers: 'h3, h4',
+      minimumHeaders: 4,
+      headers: 'h3, h4, h5, h6',
       listType: 'ul', // values: [ol|ul]
       showEffect: 'show', // values: [show|slideDown|fadeIn|none]
       showSpeed: 'slow' // set to 0 to deactivate effect
