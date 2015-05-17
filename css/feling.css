@@ -48,7 +48,7 @@ div.go-top div.stick {
 
 .target-fix {
     position: relative;
-    top: -44px; // 偏移值
+    top: -44px;
     display: block;
     height: 0;
     overflow: hidden;
