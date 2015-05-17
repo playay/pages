@@ -41,6 +41,6 @@ div.go-top div.stick {
     border-radius: 1px;
 }
 
-div.toc {
+div.toc {    left: 15px;
     position: fixed;
 }
