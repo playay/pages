@@ -7,7 +7,7 @@
       minimumHeaders: 4,
       headers: 'h1, h2, h3, h4, h5, h6',
       listType: 'ul', // values: [ol|ul]
-      showEffect: 'fadeIn', // values: [show|slideDown|fadeIn|none]
+      showEffect: 'slideDown', // values: [show|slideDown|fadeIn|none]
       showSpeed: 'slow' // set to 0 to deactivate effect
     },
     settings = $.extend(defaults, options);
