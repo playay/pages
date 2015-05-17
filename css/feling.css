@@ -42,11 +42,11 @@ div.go-top div.stick {
 }
 .clickable-header {
   cursor:pointer;
-  display:inline;
 }
 
 .clickable-header:target{
     padding-top:44px;
+    top: -44px;
 }
 
 .clickable-header:hover {
