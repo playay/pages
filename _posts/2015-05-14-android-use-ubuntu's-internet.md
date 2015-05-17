@@ -4,7 +4,7 @@ title: 安卓设备通过USB使用ubuntu电脑的ipv4网络
 tags: play
 keywords: 安卓 ubuntu android 网络共享
 ---
-- 录   
+- 录hh   
 {:toc}
 
 
