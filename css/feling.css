@@ -43,4 +43,5 @@ div.go-top div.stick {
 
 .clickable-header:target{
     padding-top:44px;
+    overflow:hidden;
 }
