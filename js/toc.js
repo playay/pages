@@ -24,7 +24,7 @@
       if (!this.id && previousSiblingName) {
         this.id = $(this).attr( "id", previousSiblingName.replace(/\./g, "-") );
       }
-      console.log(this.id);
+      
       return this.id;
     }), output = $(this);
     if (!headers.length || headers.length < settings.minimumHeaders || !output.length) {
@@ -62,6 +62,7 @@
       }
       if (this_level === level) // same level as before; same indenting
         html += "<li><a href='#" + fixedEncodeURIComponent(header.id) + "'>" + header.innerHTML + "</a>";
+        console.log(header);
       else if (this_level <= level){ // higher level than before; end parent ol
         for(i = this_level; i < level; i++) {
           html += "</li></"+settings.listType+">"
