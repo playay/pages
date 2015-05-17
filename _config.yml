@@ -8,6 +8,7 @@ ext_us_site:    http://us.feling.net
 permalink:      /:year/:month/:title.html
 lsi:            true
 markdown:       redcarpet
-toc_levels:     3..4
 redcarpet:
-    extensions: ["fenced_code_blocks", "autolink", "tables", "strikethrough", "with_toc_data"]
+    extensions: ["fenced_code_blocks", "autolink", "tables", "strikethrough", "with_toc_data", "html_toc"]
+toc_levels:     3..4
+
