@@ -68,10 +68,8 @@
     margin: 15px 0;
 }
 .markdown-body hr {
-    background: url("https://a248.e.akamai.net/assets.github.com/assets/primer/markdown/dirty-shade-350cca8f57223ebd53603021b2e670f4f319f1b7.png") repeat-x scroll 0 0 transparent;
-    border: 0 none;
-    color: #CCCCCC;
-    height: 4px;
+    border-top: 1px solid #dddddd;
+    height: 0;
     padding: 0;
 }
 .markdown-body > h2:first-child, .markdown-body > h1:first-child, .markdown-body > h1:first-child + h2, .markdown-body > h3:first-child, .markdown-body > h4:first-child, .markdown-body > h5:first-child, .markdown-body > h6:first-child {
