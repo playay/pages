@@ -42,6 +42,7 @@ div.go-top div.stick {
 }
 .clickable-header {
   cursor:pointer;
+  top: -50px;
 }
 .clickable-header:hover {
   text-decoration:underline;
