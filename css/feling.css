@@ -44,7 +44,7 @@ div.go-top div.stick {
   cursor:pointer;
 }
 
-.clickable-header :target{
+.clickable-header:target{
     padding-top:44px;
 }
 
