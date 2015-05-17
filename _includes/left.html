@@ -1,5 +1,5 @@
-<div class="uk-panel uk-panel-box" style="word-wrap:break-word; "> 
-    <h2 class="uk-panel-title">相关文章</h2>
+<div class="uk-panel uk-panel-box" style="word-wrap:break-word; display: none;"> 
+    <h2 class="uk-panel-title">最新文章</h2>
     <ul>
     {% for post in site.posts limit:5 %}
     {% if post.title != page.title %}
@@ -9,3 +9,9 @@
     </ul>
 </div>
 <br/>
+<div class="uk-panel uk-panel-box" style="word-wrap:break-word; "> 
+    <h2 class="uk-panel-title">本文目录</h2>
+    <ul>
+        
+    </ul>
+</div>
