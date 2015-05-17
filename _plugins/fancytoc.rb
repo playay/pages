@@ -1,7 +1,7 @@
 module Jekyll
   module FancyToCFilter
     def fancytoc(input)
-      converter = Redcarpet::Markdown.new(Redcarpet::Render::HTML_TOC)
+      converter = Redcarpet::Markdown.new(Redcarpet::Render::WITH_TOC_DATA)
       toc = converter.render(input)
       tocpre = '<div class="toc">'
       tocpost = '</div>'
