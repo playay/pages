@@ -18,7 +18,8 @@ keywords: 校园网 ubuntu ipv6 免登录 免流量 科学上网
 2001:778::37
 ```
 
-###ubuntu上的详细设置,截图如下:    
+###ubuntu上的详细设置
+截图如下:    
 
 ![禁用ipv4](/images/ipv6_setting0.png)
 ![设置ipv6](/images/ipv6_setting1.png)
