@@ -2,12 +2,12 @@
 (function($){
   $.fn.toc = function(options) {
     var defaults = {
-      noBackToTopLinks: true,
+      noBackToTopLinks: false,
       title: '<h2 class="uk-panel-title">本文目录</h2>',
-      minimumHeaders: 4,
+      minimumHeaders: 3,
       headers: 'h1, h2, h3, h4, h5, h6',
       listType: 'ul', // values: [ol|ul]
-      showEffect: 'slideDown', // values: [show|slideDown|fadeIn|none]
+      showEffect: 'show', // values: [show|slideDown|fadeIn|none]
       showSpeed: 'slow' // set to 0 to deactivate effect
     },
     settings = $.extend(defaults, options);
