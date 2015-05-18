@@ -11,14 +11,16 @@ keywords: [开源项目, python, http代理, gevent, 协程, 惊群]
 在开始讲解之前, 先扯几句, 讲给初学的孩子. 对于我们写代码的人, **官方文档**才是王道. 想要实现http代理, 肯定要了解一点http协议, 要了解http协议, 就要看协议的官方文档!!! 二手资料跟一手资料之间的差距, 就不多说了. 
 
 ####http协议的文档
-关于网络协议的文档, 可以在这里查<a href="https://www.ietf.org/" target="_blank">https://www.ietf.org/</a>. 搜索文档编号就行. 目前关于http的文档有这几篇:    
+关于网络协议的文档, 可以在这里查https://www.ietf.org/. 搜索文档编号就行. 目前关于http的文档有这几篇:    
 
-- <a href="https://tools.ietf.org/html/rfc7230" target="_blank">https://tools.ietf.org/html/rfc7230</a>    
-- <a href="https://tools.ietf.org/html/rfc7231" target="_blank">https://tools.ietf.org/html/rfc7231</a>    
-- <a href="https://tools.ietf.org/html/rfc7232" target="_blank">https://tools.ietf.org/html/rfc7232</a>    
-- <a href="https://tools.ietf.org/html/rfc7233" target="_blank">https://tools.ietf.org/html/rfc7233</a>    
-- <a href="https://tools.ietf.org/html/rfc7234" target="_blank">https://tools.ietf.org/html/rfc7234</a>    
-- <a href="https://tools.ietf.org/html/rfc7235" target="_blank">https://tools.ietf.org/html/rfc7235</a>    
+`提示: 谷歌浏览器按住ctrl键再点击链接, 可以在后台标签中打开`
+
+- https://tools.ietf.org/html/rfc7230    
+- https://tools.ietf.org/html/rfc7231    
+- https://tools.ietf.org/html/rfc7232    
+- https://tools.ietf.org/html/rfc7233    
+- https://tools.ietf.org/html/rfc7234    
+- https://tools.ietf.org/html/rfc7235    
 
 ####项目git地址
 这个项目目前托管在开源中国: http://git.oschina.net/chenyanclyz/httpproxy    
