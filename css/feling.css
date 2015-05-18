@@ -301,6 +301,19 @@ iframe {
     margin-top: 35px;
   }
 }
+@media (min-width: 480px) {
+  .uk-grid {
+    margin-left: 0px;
+  }
+  .uk-grid > * {
+    padding-left: 0px;
+  }
+  .uk-grid + .uk-grid,
+  .uk-grid-margin,
+  .uk-grid > * > .uk-panel + .uk-panel {
+    margin-top: 0px;
+  }
+}
 .uk-grid-collapse {
   margin-left: 0;
 }
