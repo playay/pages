@@ -49,7 +49,7 @@ keywords: [开源项目, python3, http代理, gevent, 协程, 惊群]
 
 我们写的是python代码, 就不需要src文件夹了, 可执行文件就是源码, 所以建个`http_proxy/bin/` 文件夹, 工程就算创建好了......哈哈哈, 就这样...太扯了...至少还得新建个`http_proxy.py`文件吧.    
 
-####接收并解析处理请求
+####接收、解析、处理请求
 我们用socket接收http请求. 首先, 写出一个socket程序的模板:    
 绑定、监听、启动新线程处理请求    
 {% gist chenyanclyz/5f2127c5d4ec675489a1 _socket.py %}
