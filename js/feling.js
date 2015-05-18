@@ -74,13 +74,13 @@ $(function() {
         for(i = this_level; i < level; i++) {
           html += "</li></"+settings.listType+">"
         }
-        html += "<li><a href='#" + fixedEncodeURIComponent(header.id) + "'>" + header.innerHTML + "</a>";
+        html += "<li><a href='#" + fixedEncodeURIComponent(header.id) + "'>" + header.innerHTML.replace(new RegExp("<a.+?>(.+?)</a>"),"$1") + "</a>";
       }
       else if (this_level > level) { // lower level than before; expand the previous to contain a ol
         for(i = this_level; i > level; i--) {
           html += "<"+settings.listType+"><li>"
         }
-        html += "<a href='#" + fixedEncodeURIComponent(header.id) + "'>" + header.innerHTML + "</a>";
+        html += "<a href='#" + fixedEncodeURIComponent(header.id) + "'>" + header.innerHTML.replace(new RegExp("<a.+?>(.+?)</a>"),"$1") + "</a>";
       }
       level = this_level; // update for the next one
     });

@@ -12,7 +12,10 @@ keywords: [开源项目, python, http代理, gevent, 协程, 惊群]
 
 ####http协议的文档
 关于网络协议的文档, 可以在这里查https://www.ietf.org/. 搜索文档编号就行. 目前关于http的文档有这几篇:    
-`提示: 谷歌浏览器按住ctrl键再点击链接, 可以在后台标签中打开`    
+
+```
+提示: 谷歌浏览器按住ctrl键再点击链接, 可以在后台标签中打开
+```
 
 - https://tools.ietf.org/html/rfc7230    
 - https://tools.ietf.org/html/rfc7231    
