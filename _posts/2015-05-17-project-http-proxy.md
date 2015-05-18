@@ -25,8 +25,7 @@ keywords: [开源项目, python, http代理, gevent, 协程, 惊群]
 - https://tools.ietf.org/html/rfc7235    
 
 ####项目git地址
-这个项目目前托管在开源中国: http://git.oschina.net/chenyanclyz/httpproxy    
-过段时间我应该会全面转到github上.    
+这个项目目前托管在github上: https://github.com/chenyanclyz/http_proxy    
 
 ####最原始的实现原理
 实现一个http代理的功能, 最容易想到的程序的运行过程, 应该是这样的:    
