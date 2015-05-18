@@ -6936,6 +6936,7 @@ a.uk-datepicker-table-muted {
 }
 .markdown-body h3 {
     font-size: 20px;
+    border-bottom: 1px solid #eee;
 }
 .markdown-body h4 {
     font-size: 17px;
