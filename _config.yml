@@ -1,4 +1,4 @@
-title:          feling.net
+title:          feling
 exclude:        ['README.md', 'CNAME']
 timezone:       Asia/shanghai
 encoding:       'utf-8'
