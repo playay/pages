@@ -111,7 +111,7 @@ keywords: [开源项目, python3, http代理, gevent, 协程, 惊群]
 {% gist chenyanclyz/5f2127c5d4ec675489a1 dock_socket.py %}
 
 因为我们只做短连接, 所以如果数据方向是响应方发给请求方的, 就可以close掉socket了. 这就是`recv_from_response`的含义    
-基于`dock_socket()`方法, do_tunnel()的实现如下:    
+基于`dock_socket()`方法, `do_tunnel()`的实现如下:    
 {% gist chenyanclyz/5f2127c5d4ec675489a1 do_tunnel.py %}
 
 隧道建立成功, 按照http协议要求, 要给请求方一个响应, 即第12行的`soc.send(TUNNEL_OK)`.    
