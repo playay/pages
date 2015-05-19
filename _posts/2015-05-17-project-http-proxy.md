@@ -105,6 +105,19 @@ keywords: [开源项目, python3, http代理, gevent, 协程, 惊群]
 
 
 ####得到响应并回传给请求方
+上一节中, 我们接收完了http请求, 并解析、处理了它. 算是完成了[最原始的实现原理](#最原始的实现原理)中的1、2两步. 最后留下了两个方法`do_proxy()`和`do_tunnel()`. 实现这两个方法, 就算是完成了剩下的3、4两步.    
+
+先说下相对简短的`do_tunnel()`. 要实现的是: 建立一条请求方到目标主机的隧道. 其实只要新建一个socket连到目标主机上, 然后把请求方的socket拿过来、对接上就OK了. 对接, 就是把一个socket收到的数据, 发给另一个socket. 看代码:    
+{% gist chenyanclyz/5f2127c5d4ec675489a1 dock_socket.py %}
+
+因为我们只做短连接, 所以如果数据方向是响应方发给请求方的, 就可以close掉socket了. 这就是`recv_from_response`的含义    
+基于`dock_socket()`方法, do_tunnel()的实现如下:    
+{% gist chenyanclyz/5f2127c5d4ec675489a1 do_tunnel.py %}
+
+隧道建立成功, 按照http协议要求, 要给请求方一个响应, 即第12行的`soc.send(TUNNEL_OK)`.    
+至此, 对CONNECT方法的http请求, 已经可以正常处理. 通过这个程序代理, 已经可以正常访问`https://www.baidu.com`    
+
+---
 
 
 
