@@ -68,7 +68,7 @@ keywords: [开源项目, python3, http代理, gevent, 协程, 惊群]
 绑定、监听、启动新线程处理请求    
 {% gist chenyanclyz/5f2127c5d4ec675489a1 _socket.py %}
 
-如上所示, 我们做到了: 来一个请求, 就启动一个线程. 在新的线程里, 用proxyer()接收请求.    
+如上所示, 我们做到了: 来一个请求, 就启动一个线程. 在新的线程里, 用`proxyer()`接收请求.    
 
 ---
 
@@ -80,8 +80,7 @@ keywords: [开源项目, python3, http代理, gevent, 协程, 惊群]
 所以可以这样做:    
 {% gist chenyanclyz/5f2127c5d4ec675489a1 recv_request0.py %}
 
-但如果是POST方法, 在请求头接收完之后可能还有数据.    
-http协议在中, 有两种方式判断POST请求是否接收完整:    
+但如果是POST方法, 在请求头接收完之后可能还有数据. http协议在中, 有两种方式判断POST请求是否接收完整:    
 
 1. 如果请求头中包含`Content-Length`,就用它来判断    
 2. 如果请求头中包含`Transfer-Encoding`, 就用它来判断    
@@ -98,12 +97,12 @@ http协议在中, 有两种方式判断POST请求是否接收完整:
 ---
 
 对于http请求, 还有最后一步, 按照协议规定: 浏览器发给代理的请求头, 与正常的请求头是不一样的, 所以我们还要对请求头做一些修改, 才能转给目的主机.    
-修改请求头的代码如下:    
+修改请求头的代码如下, 把这段代码加到`proxyer()`的末尾就行了:    
 {% gist chenyanclyz/5f2127c5d4ec675489a1 modify_request.py %}
 
 
-完善proxyer()方法如下:    
-{% gist chenyanclyz/5f2127c5d4ec675489a1 recv_request.py %}
+修改完了请求头, 就该用它去获取响应了, 但是CONNECT方法的请求比较特殊, 如果是CONNECT方法, 接下来要做的不是获取请求, 而是建立一条到目标主机的隧道. 所以我们准备好两个方法`do_proxy()`和`do_tunnel()`. 下一节中我们会分别实现这两个方法.    
+{% gist chenyanclyz/5f2127c5d4ec675489a1 end_proxyer.py %}
 
 
 ####得到响应并回传给请求方
