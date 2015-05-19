@@ -115,17 +115,16 @@ keywords: [开源项目, python3, http代理, gevent, 协程, 惊群]
 {% gist chenyanclyz/5f2127c5d4ec675489a1 do_tunnel.py %}
 
 隧道建立成功, 按照http协议要求, 要给请求方一个响应, 即第12行的`soc.send(TUNNEL_OK)`.    
-至此, 对CONNECT方法的http请求, 已经可以正常处理. 通过这个程序代理, 已经可以正常访问`https://www.baidu.com`    
+至此, 对CONNECT方法的http请求, 已经可以完整处理. 通过这个程序代理, 已经可以正常访问`https://www.baidu.com`    
 
 ---
 
+###未完待续...
 
 
 ###改善性能
 
 ---
-
-
 
 ####协程
 ####多进程
@@ -135,5 +134,5 @@ keywords: [开源项目, python3, http代理, gevent, 协程, 惊群]
 
 
 
-###未完待续...
+
 
