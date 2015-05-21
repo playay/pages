@@ -1,5 +1,5 @@
 ---
-layout: post_with_left_and_proxy_hint
+layout: post_with_left
 title: 安卓播放内存中的视频数据
 tags: play
 keywords: [安卓, 视频播放, 底层接口, 内存中的视频数据]
@@ -28,3 +28,4 @@ keywords: [安卓, 视频播放, 底层接口, 内存中的视频数据]
 ---
 
 折腾了一晚上的结果: 视频文件, 是一个容器. 包装了视频和音频数据. 往MediaCodec的inputBuffer里送的数组, 不应该是视频文件, 而是从文件解析提取(去掉包装)出来的原始视频或音频数据. 
+所以还要做容器的解析...工作量好大, 跟想象的不一样T.T
