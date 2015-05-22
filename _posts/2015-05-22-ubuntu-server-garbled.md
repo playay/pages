@@ -4,6 +4,7 @@ title: ubuntu server 中文乱码
 tags: play
 keywords: [ubuntu, 中文乱码]
 ---
+
 ###问题
 
 ---
@@ -24,10 +25,12 @@ keywords: [ubuntu, 中文乱码]
 
 ---
 Ubuntu 官网上说, 有两个文件用来配置时区:    
+
 ```
 /etc/default/locale
 /etc/environment
 ```
+
 实际用的时候, 其中一台机器改`/etc/default/locale`无效, 改`/etc/environment`才行. 另一台机器只改了`/etc/default/locale`就可以了.    
 
 附上配置的内容:   
