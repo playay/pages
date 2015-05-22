@@ -1,6 +1,6 @@
 ---
 layout: post_with_left
-title: ubuntu系统在校园网使用纯ipv6
+title: ubuntu在校园网使用纯ipv6
 tags: play proxy
 keywords: [校园网, ubuntu, ipv6, 免登录, 免流量, 科学上网]
 ---
