@@ -31,7 +31,9 @@ Ubuntu 官网上说, 有两个文件用来配置时区:
 /etc/environment
 ```
 
-实际用的时候, 其中一台机器改`/etc/default/locale`无效, 改`/etc/environment`才行. 另一台机器只改了`/etc/default/locale`就可以了.    
+实际用的时候, 其中一台机器只改了`/etc/default/locale`就可以了.    
+
+但是另一台怎么改都无效. 感觉像是根本没运行配置文件. 实在没办法, 在`/ect/profile`里面export了配置. 
 
 附上配置的内容:   
 
