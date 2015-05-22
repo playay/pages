@@ -35,7 +35,7 @@ Ubuntu 官网上说, 有两个文件用来配置时区:
 
 附上配置的内容:   
 
-```shell
+```
 LANG=en_US.UTF-8
 LANGUAGE=en_US:en
 LC_CTYPE="en_US.UTF-8"
