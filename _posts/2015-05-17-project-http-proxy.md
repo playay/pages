@@ -100,7 +100,7 @@ keywords: [开源项目, python3, http代理, gevent, 协程, 惊群]
 {% gist chenyanclyz/5f2127c5d4ec675489a1 modify_request.py %}
 
 
-修改完了请求头, 就该用它去获取响应了, 但是CONNECT方法的请求比较特殊, 如果是CONNECT方法, 接下来要做的不是获取请求, 而是建立一条到目标主机的隧道. 所以我们准备好两个方法`do_proxy()`和`do_tunnel()`. 下一节中我们会分别实现这两个方法.    
+修改完了请求头, 就该用它去获取响应了, 但是CONNECT方法的请求比较特殊, 如果是CONNECT方法, 接下来要做的不是获取响应, 而是建立一条到目标主机的隧道. 所以我们准备好两个方法`do_proxy()`和`do_tunnel()`. 下一节中我们会分别实现这两个方法.    
 {% gist chenyanclyz/5f2127c5d4ec675489a1 end_proxyer.py %}
 
 
