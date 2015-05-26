@@ -1,5 +1,5 @@
 html {
-  font: normal 14px / 20px "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font: normal 14px / 20px "Helvetica Neue", Helvetica,"Microsoft YaHei", Arial, sans-serif;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
   background: #ffffff;
@@ -120,7 +120,7 @@ h4,
 h5,
 h6 {
   margin: 0 0 15px 0;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Helvetica Neue", Helvetica, "Microsoft YaHei", Arial, sans-serif;
   font-weight: normal;
   color: #444444;
   text-transform: none;
@@ -1283,7 +1283,7 @@ html:not(.uk-touch) .uk-nav-offcanvas ul a:hover {
   line-height: 40px;
   color: #ffffff;
   font-size: 14px;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Helvetica Neue", Helvetica, "Microsoft YaHei", Arial, sans-serif;
   font-weight: normal;
 }
 .uk-navbar-nav > li > a[href='#'] {
