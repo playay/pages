@@ -15,7 +15,7 @@ git config --global user.email chenyan@feling.net
 ```
 
 
-###快捷键
+###别名
 
 ---
 ```
