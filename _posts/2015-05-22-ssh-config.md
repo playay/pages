@@ -21,7 +21,7 @@ keywords: [ssh]
 
 先给所有用户设置:    
 
-```python
+```
 PermitRootLogin no
 UsePAM no
 PasswordAuthentication no
@@ -32,7 +32,7 @@ PasswordAuthentication no
 fq是希望能使用密码登录的用户组     
 
 
-```python
+```
 Match Group fq
     PasswordAuthentication yes
 
