@@ -1283,7 +1283,7 @@ html:not(.uk-touch) .uk-nav-offcanvas ul a:hover {
   line-height: 40px;
   color: #ffffff;
   font-size: 14px;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family:  "Droid Sans Fallback","Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: normal;
 }
 .uk-navbar-nav > li > a[href='#'] {
