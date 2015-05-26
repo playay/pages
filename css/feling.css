@@ -1,7 +1,5 @@
 html {
-  font: normal 14px / 20px "Helvetica Neue", "Helvetica","Hiragino Sans GB", Arial, sans-serif;
-  font-mono:Monaco, Menlo, Consolas, Courier New, "Heiti SC", STHeiti, "Microsoft Yahei", monospace;
-  font-default:"Helvetica Neue", "Helvetica","Hiragino Sans GB","Microsoft YaHei", "WenQuanYi Micro Hei",Arial, sans-serif;
+  font: normal 14px / 20px "Droid Sans Fallback","Helvetica Neue", "Helvetica", Arial, sans-serif;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
   background: #ffffff;
