@@ -1,7 +1,7 @@
 ---
 layout: post_with_left_and_proxy_hint
 title: android通过USB使用ubuntu的ipv4网络
-tags: play
+tags: other
 keywords: [安卓, ubuntu, android, 网络共享]
 ---
 再一次明确标题: 电脑有网络, 通过USB接口, 共享给没网的手机用

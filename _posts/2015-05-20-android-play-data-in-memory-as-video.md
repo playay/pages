@@ -1,7 +1,7 @@
 ---
 layout: post_with_left
 title: 安卓播放内存中的视频数据
-tags: play
+tags: other
 keywords: [安卓, 视频播放, 底层接口, 内存中的视频数据]
 ---
 
