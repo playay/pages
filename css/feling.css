@@ -26,6 +26,10 @@ a:hover,
   color: #005599;
   text-decoration: underline;
 }
+.uk-article-meta a:hover {
+
+}
+
 abbr[title] {
   border-bottom: 1px dotted;
 }
