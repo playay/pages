@@ -11,6 +11,9 @@ body {
 a {
   background: transparent;
 }
+.uk-article-meta a:hover {
+  color: 999999
+}
 a:active,
 a:hover {
   outline: 0;
@@ -25,9 +28,6 @@ a:hover,
 .uk-link:hover {
   color: #005599;
   text-decoration: underline;
-}
-.uk-article-meta a:hover {
-
 }
 
 abbr[title] {
