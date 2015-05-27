@@ -11,8 +11,8 @@ body {
 a {
   background: transparent;
 }
-.uk-article-meta a:hover {
-  color: 999999
+#click_count {
+  color: #999999
 }
 a:active,
 a:hover {
