@@ -2,7 +2,7 @@
 layout: default_with_left
 ---
 <h2 class="uk-article-title">{{ page.title }}</h2>
-<p class="uk-article-meta">{{ page.date | date: "%Y-%m-%d" }}&nbsp;&nbsp;|&nbsp;&nbsp;
+<p class="uk-article-meta">{{ page.date | date: "%Y-%m-%d" }}&nbsp;&nbsp;<script src="{{ site.ext_us_site }}:8888/click_count?post_id={{ page.id }}"></script>|&nbsp;&nbsp;
 {% for tag in page.tags %}
 {% case tag %}
     {% when 'proxy' %}
