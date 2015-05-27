@@ -2,7 +2,7 @@
 layout: default_with_left
 ---
 <h2 class="uk-article-title">{{ page.title }}</h2>
-<p class="uk-article-meta">{{ page.date | date: "%Y-%m-%d" }}&nbsp;发布&nbsp;&nbsp;&nbsp;&nbsp;<a id="click_count" href="javascript:void(0);"></a>&nbsp;&nbsp;&nbsp;&nbsp;
+<p class="uk-article-meta"><a id="click_count" href="javascript:void(0);"></a>&nbsp;&nbsp;&nbsp;&nbsp;
 {% for tag in page.tags %}
 {% case tag %}
     {% when 'proxy' %}
