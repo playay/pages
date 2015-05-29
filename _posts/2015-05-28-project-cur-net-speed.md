@@ -1,7 +1,7 @@
 ---
 layout: post_with_left_and_proxy_hint
 title: python获取当前网速
-intro: 通过统计`ifconfig`的输出信息，计算当前网速。这是一个几分钟就能完成的小程序。主要是提供一个获取网速的的思路。
+intro: 通过统计`ifconfig`的输出信息，计算当前网速。这是一个几分钟就能完成的小程序。主要是为了提供一个获取网速的的思路。
 tags: project
 keywords: [开源项目, python3, 网速]
 ---
