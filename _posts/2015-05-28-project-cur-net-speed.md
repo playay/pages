@@ -11,7 +11,7 @@ keywords: [开源项目, python3, 网速]
 http://git.oschina.net/chenyanclyz/curspeed
 
 
-###原理
+###基本原理
 
 ---
 在Linux上，可以用`ifconfig`命令查看到网络接口的信息，包括本次开机某个网络接口收发了多少字节的数据。    
@@ -23,7 +23,7 @@ http://git.oschina.net/chenyanclyz/curspeed
 我们使用python的os.popen()执行shell命令，并得到命令的执行结果。用re.sub()匹配出收发的总字节。    
     
     
-###代码
+###代码示例
 {% gist chenyanclyz/4330e6fb489edc382e28 %}
 
 运行示例：    
