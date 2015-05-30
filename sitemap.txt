@@ -9,3 +9,5 @@ http://pages.feling.net/2015/05/git-config.html
 http://pages.feling.net/2015/05/ssh-config.html
 http://pages.feling.net/2015/05/ubuntu-server-garbled.html
 http://pages.feling.net/2015/05/vi-vim.html
+http://pages.feling.net/2015/05/project-cur-net-speed.html
+http://pages.feling.net/2015/05/project-httpd4t.html
