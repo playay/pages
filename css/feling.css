@@ -7254,11 +7254,6 @@ div.go-top div.stick {
     border-radius: 1px;
 }
 
-.clickable-header:target{
-    padding-top:44px;
-    overflow:hidden;
-}
-
 .target-fix {
     position: relative;
     top: -44px;
