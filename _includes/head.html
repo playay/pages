@@ -17,8 +17,10 @@
 <script src="/js/jquery-2.1.1.min.js"></script>
 <script src="/js/uikit.min.js"></script>
 <script src="/js/feling.js"></script>
+{% if page.id %}
 <script type="text/javascript">
 $(document).ready(function() {
     $('#toc').toc();
 });
 </script>
+{% endif %}
