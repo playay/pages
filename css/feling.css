@@ -7262,3 +7262,10 @@ div.go-top div.stick {
     overflow: hidden;
 }
 
+#gcs .gsc-search-button {
+    display: none;
+}
+
+#gcs .gsib_b {
+    display: none;
+}
