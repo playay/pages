@@ -1,9 +1,9 @@
 ---
 layout: post_with_left_and_proxy_hint
 title: python实现http代理
-intro: 基于python的socket实现的http代理, 用到了多进程+协程来提高性能
+intro: 基于python的socket实现的http代理, 用到了多进程+协程来提高性能. 
 tags: project
-keywords: [开源项目, python3, http代理, gevent, 协程, 惊群]
+keywords: [开源项目, python, http代理, gevent, 协程, 惊群]
 ---
 
 
@@ -115,7 +115,31 @@ keywords: [开源项目, python3, http代理, gevent, 协程, 惊群]
 {% gist chenyanclyz/5f2127c5d4ec675489a1 do_tunnel.py %}
 
 隧道建立成功, 按照http协议要求, 要给请求方一个响应, 即第12行的`soc.send(TUNNEL_OK)`.    
-至此, 对CONNECT方法的http请求, 已经可以完整处理. 通过这个程序代理, 已经可以正常访问`https://www.baidu.com`    
+至此, 对CONNECT方法的http请求, 已经可以完整处理. 通过这个程序代理, 已经可以正常访问`https://www.baidu.com`.    
+
+```
+其实, 第13、14行是我瞎写的. 没经过测试. 因为我当时直接用的gevent写这段代码. 在[改善性能](#改善性能)这章中会写到.    
+```
+
+接下来我们说`do_proxy()`方法, 要实现的功能就是连接目标主机; 发送请求; 接收响应; 转发请求这4步.    
+
+除了接收响应需要像接收请求时一样, 注意如何完整接收报文意外. 并没有什么麻烦的地方.    
+
+既然是像接收请求一样就收响应, 还是要先解析响应报文头:    
+{% gist chenyanclyz/5f2127c5d4ec675489a1 parse_response.py %}
+
+然后完成do_proxy()方法:    
+{% gist chenyanclyz/5f2127c5d4ec675489a1 do_proxy.py %}
+
+去掉各种try, 还有对响应完整性的判断, 上面这段代码也就剩下:    
+
+```
+c = socket.socket()
+c.connect((host, port))
+buf = c.recv(4096)
+soc.send(buf)
+
+```
 
 ---
 
