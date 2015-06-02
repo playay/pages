@@ -136,7 +136,7 @@ keywords: [开源项目, python, http代理, gevent, 协程, 惊群]
 然后完成`do_proxy()`方法:    
 {% gist chenyanclyz/5f2127c5d4ec675489a1 do_proxy.py %}
 
-去掉各种try, 还有对响应完整性的判断, 上面这段代码也就剩下:    
+其实,去掉各种try, 还有对响应完整性的判断, 上面这段代码也就剩下:    
 
 ```
 c = socket.socket()
