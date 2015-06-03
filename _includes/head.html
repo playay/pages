@@ -16,10 +16,14 @@
 <script src="/js/uikit.min.js"></script>
 <script src="/js/feling.js"></script>
 {% if page.id %}
+<!--本文目录-->
 <script type="text/javascript">
 $(document).ready(function() {
     $('#toc').toc();
 });
 </script>
+
+<!--页面点击数统计-->
+<script src="{{ site.ext_us_site }}/click_count?post_id={{ page.id }}"></script>
 {% endif %}
 <script>var _hmt = _hmt || [];(function() {var hm = document.createElement("script");hm.src = "//hm.baidu.com/hm.js?42f8689c3823e25a6822c3430c594c09";var s = document.getElementsByTagName("script")[0];s.parentNode.insertBefore(hm, s);})();</script>
