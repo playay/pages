@@ -1,6 +1,6 @@
 ---
 layout: post_with_left
-title: 服务器'too many open files'了
+title: 服务器 too many open files 了
 tags: play
 keywords: [too many open files]
 ---
@@ -16,4 +16,6 @@ keywords: [too many open files]
 因为程序并没有严格的每时每刻都在运行的需求。半夜重启程序，几秒钟的时间，并不影响用户体验。所以最后用的解决方案是：在每天的凌晨5点定时运行重启程序的脚本。        
 
     
+---
+
 在这留个标签。。。以后有其他的解决方案了再补上
