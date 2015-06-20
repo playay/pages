@@ -1,6 +1,6 @@
 ---
 layout: post_with_left
-title: 服务器 too many open files 了
+title: too many open files T.T
 tags: play
 keywords: [too many open files]
 ---
