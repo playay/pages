@@ -5322,7 +5322,7 @@ a.uk-thumbnail:focus {
 @media (min-width: 1220px) {
   .uk-container {
    /* max-width: 1200px;*/
-    padding: 0 20px;
+    padding: 0 300px 0 20px;
   }
 }
 .uk-container:before,
