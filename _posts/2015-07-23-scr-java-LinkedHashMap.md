@@ -29,4 +29,4 @@ keywords: [LinkedHashMap]
 这样就做到了最近使用的和新插入的都集中在head节点前面，从head节点往后数就是最不常用的节点。   
 
 ###控制Map的大小
-重写removeEldestEntry方法，让它返回Ture，能让Map在每次添加节点的时候，删除head后面的那个节点。按源码注释里说到了。自己规定个大小，如果Map的size()大于这个值，就让removeEldestEntry返回True。就能限制Map的大小。
+重写removeEldestEntry方法，让它返回Ture，能让Map在每次添加节点的时候，删除head后面的那个节点。按源码注释里说到的，自己规定个大小，如果Map的size()大于这个值，就让removeEldestEntry返回True。就能限制Map的大小。
