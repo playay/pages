@@ -1,7 +1,7 @@
 ---
 layout: post_with_left
 title: 系统地了解Map，读LinkedHashMap源码
-tags: src_java
+tags: srcJ
 keywords: [LinkedHashMap]
 ---
 ###别人那边听到的Map
