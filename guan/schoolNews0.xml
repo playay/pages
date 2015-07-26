@@ -5,7 +5,7 @@
         <comefrom>1</comefrom>
         <time>1</time>
         <url>1</url>
-        <collected>1</collected>
+        <collected>no</collected>
     </news>
     <news>
         <userface>1</userface>
@@ -13,7 +13,7 @@
         <comefrom>1</comefrom>
         <time>1</time>
         <url>1</url>
-        <collected>1</collected>
+        <collected>yes</collected>
     </news>
     
 </schoolnews>
