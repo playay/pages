@@ -1,10 +1,82 @@
 <schoolnews>
     <news>
         <userface>http://git.oschina.net/logo.gif</userface>
+        <title>校党委理论学习中心组召开学习会集中开展专题教育之二“严以律己”专题研讨</title>
+        <comefrom>校园新闻</comefrom>
+        <time>2015-07-24</time>
+        <url>html/news00.html</url>
+        <collected>no</collected>
+    </news>
+	<news>   
+		<userface>http://git.oschina.net/logo.gif</userface>
         <title>暑假前夕我校喜迎24个班级返校校友</title>
         <comefrom>校园新闻</comefrom>
         <time>2015-07-21</time>
-        <url>html/news00.html</url>
+        <url>html/news01.html</url>
+        <collected>no</collected>
+	</news>
+	<news>
+        <userface>http://git.oschina.net/logo.gif</userface>
+        <title>我校对“特需项目”预验收工作进行安排部署</title>
+        <comefrom>校园新闻</comefrom>
+        <time>2015-07-18</time>
+        <url>html/news02.html</url>
+        <collected>no</collected>
+    </news>
+	<news>
+        <userface>http://git.oschina.net/logo.gif</userface>
+        <title>我校与吉林省璟明建筑设计有限公司共建大学生实践基地</title>
+        <comefrom>校园新闻</comefrom>
+        <time>2015-07-18</time>
+        <url>html/news03.html</url>
+        <collected>no</collected>
+    </news>
+	<news>
+        <userface>http://git.oschina.net/logo.gif</userface>
+        <title>我校荣获“吉林省公共机构能源资源消费统计工作先进单位”称号</title>
+        <comefrom>校园新闻</comefrom>
+        <time>2015-07-17</time>
+        <url>html/news04.html</url>
+        <collected>no</collected>
+    </news>
+	<news>
+        <userface>http://git.oschina.net/logo.gif</userface>
+        <title>学校领导考察我校大学生创新创业基地</title>
+        <comefrom>校园新闻</comefrom>
+        <time>2015-07-17</time>
+        <url>html/news05.html</url>
+        <collected>no</collected>
+    </news>
+	<news>
+        <userface>http://git.oschina.net/logo.gif</userface>
+        <title>我校教师在长春市职工歌手大赛中取得好成绩</title>
+        <comefrom>校园新闻</comefrom>
+        <time>2015-07-14</time>
+        <url>html/news06.html</url>
+        <collected>no</collected>
+    </news>
+	<news>
+        <userface>http://git.oschina.net/logo.gif</userface>
+        <title>国防教育学院举行2015届毕业国防生出征仪式</title>
+        <comefrom>校园新闻</comefrom>
+        <time>2015-07-13</time>
+        <url>html/news07.html</url>
+        <collected>no</collected>
+    </news>
+	<news>
+        <userface>http://git.oschina.net/logo.gif</userface>
+        <title>我校校报在2014年度省高校校报好新闻评比中获奖</title>
+        <comefrom>校园新闻</comefrom>
+        <time>2015-07-10</time>
+        <url>html/news08.html</url>
+        <collected>no</collected>
+    </news>
+	<news>
+        <userface>http://git.oschina.net/logo.gif</userface>
+        <title>学校教育基金会理事会召开2015年会议</title>
+        <comefrom>校园新闻</comefrom>
+        <time>2015-07-09</time>
+        <url>html/news09.html</url>
         <collected>no</collected>
     </news>
 </schoolnews>
