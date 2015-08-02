@@ -1,27 +1,12 @@
 <schoolnews>
-<news>
-    <userface>http://git.oschina.net/logo.gif</userface>
-    <title>Ğ£µ³Î¯ÀíÂÛÑ§Ï°ÖĞĞÄ×éÕÙ¿ªÑ§Ï°»á¼¯ÖĞ¿ªÕ¹×¨Ìâ½ÌÓıÖ®¶ş¡°ÑÏÒÔÂÉ¼º¡±×¨ÌâÑĞÌÖ</title>
-    <comefrom>Ğ£ÄÚĞÂÎÅ</comefrom>
-    <time>2015-07-24</time>
-    <url>html/news00.html</url>
-    <collected>no</collected>
-</news>
-<news>
-    <userface>http://git.oschina.net/logo.gif</userface>
-    <title>Êî¼ÙÇ°Ï¦ÎÒĞ£Ï²Ó­24¸ö°à¼¶·µĞ£Ğ£ÓÑ</title>
-    <comefrom>Ğ£ÄÚĞÂÎÅ</comefrom>
-    <time>2015-07-21</time>
-    <url>http://www.ccit.edu.cn/article.php?articleid=3931</url>
-    <collected>no</collected>
-</news>
-<news>
-    <userface>http://git.oschina.net/logo.gif</userface>
-    <title>ÎÒĞ£¶Ô¡°ÌØĞèÏîÄ¿¡±Ô¤ÑéÊÕ¹¤×÷½øĞĞ°²ÅÅ²¿Êğ</title>
-    <comefrom>Ğ£ÄÚĞÂÎÅ</comefrom>
-    <time>2015-07-18</time>
-    <url>html/news02.html</url>
-    <collected>no</collected>
-</news>
+    <news>
+        <userface>http://git.oschina.net/logo.gif</userface>
+        <title>æš‘å‡å‰å¤•æˆ‘æ ¡å–œè¿24ä¸ªç­çº§è¿”æ ¡æ ¡å‹</title>
+        <comefrom>æ ¡å›­æ–°é—»</comefrom>
+        <time>2015-07-21</time>
+        <url>html/news00.html</url>
+        <collected>no</collected>
+    </news>
+                                                                                                            
+</schoolnews>
 
-<schoolnews>
