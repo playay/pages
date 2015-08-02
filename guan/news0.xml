@@ -1,19 +1,27 @@
 <schoolnews>
-    <news>
-        <userface>1</userface>
-        <title>1</title>
-        <comefrom>1</comefrom>
-        <time>1</time>
-        <url>1</url>
-        <collected>no</collected>
-    </news>
-    <news>
-        <userface>1</userface>
-        <title>1</title>
-        <comefrom>1</comefrom>
-        <time>1</time>
-        <url>1</url>
-        <collected>yes</collected>
-    </news>
-    
-</schoolnews>
+<news>
+    <userface>http://git.oschina.net/logo.gif</userface>
+    <title>校党委理论学习中心组召开学习会集中开展专题教育之二“严以律己”专题研讨</title>
+    <comefrom>校内新闻</comefrom>
+    <time>2015-07-24</time>
+    <url>html/news00.html</url>
+    <collected>no</collected>
+</news>
+<news>
+    <userface>http://git.oschina.net/logo.gif</userface>
+    <title>暑假前夕我校喜迎24个班级返校校友</title>
+    <comefrom>校内新闻</comefrom>
+    <time>2015-07-21</time>
+    <url>http://www.ccit.edu.cn/article.php?articleid=3931</url>
+    <collected>no</collected>
+</news>
+<news>
+    <userface>http://git.oschina.net/logo.gif</userface>
+    <title>我校对“特需项目”预验收工作进行安排部署</title>
+    <comefrom>校内新闻</comefrom>
+    <time>2015-07-18</time>
+    <url>html/news02.html</url>
+    <collected>no</collected>
+</news>
+
+<schoolnews>
