@@ -17,10 +17,26 @@
 	</news>
 	<news>
         <userface>http://pages.feling.net/guan/logo.jpg</userface>
+        <title>学校的军训服是什么样的呢</title>
+        <comefrom>校园论坛</comefrom>
+        <time>2015-09-03</time>
+        <url>html/news06.html</url>
+        <collected>no</collected>
+    </news>
+	<news>
+        <userface>http://pages.feling.net/guan/logo.jpg</userface>
         <title>图书馆开门时间</title>
         <comefrom>校园论坛</comefrom>
         <time>2015-09-02</time>
         <url>html/news02.html</url>
+        <collected>no</collected>
+    </news>
+	<news>
+        <userface>http://pages.feling.net/guan/logo.jpg</userface>
+        <title>床上用品是到了再交钱买？</title>
+        <comefrom>校园论坛</comefrom>
+        <time>2015-09-02</time>
+        <url>html/news08.html</url>
         <collected>no</collected>
     </news>
 	<news>
@@ -41,26 +57,10 @@
     </news>
 	<news>
         <userface>http://pages.feling.net/guan/logo.jpg</userface>
-        <title>神皖能源有限责任公司</title>
-        <comefrom>校园论坛</comefrom>
-        <time>2015-05-20</time>
-        <url>html/news06.html</url>
-        <collected>no</collected>
-    </news>
-	<news>
-        <userface>http://pages.feling.net/guan/logo.jpg</userface>
         <title>五矿钢铁哈尔滨有限公司长春分公司</title>
         <comefrom>校园论坛</comefrom>
         <time>2015-05-18</time>
         <url>html/news07.html</url>
-        <collected>no</collected>
-    </news>
-	<news>
-        <userface>http://pages.feling.net/guan/logo.jpg</userface>
-        <title>远大科技集团</title>
-        <comefrom>校园论坛</comefrom>
-        <time>2015-05-18</time>
-        <url>html/news08.html</url>
         <collected>no</collected>
     </news>
 	<news>
