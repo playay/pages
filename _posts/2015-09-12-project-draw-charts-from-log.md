@@ -6,6 +6,9 @@ tags: project
 keywords: [开源项目, python, 统计图表, 日志分析]
 ---
 
+###项目地址
+https://github.com/chenyanclyz/draw_charts_from_log
+
 ###情景再现
 
 日志文件中有一行行类似这样的记录:    
@@ -25,18 +28,55 @@ keywords: [开源项目, python, 统计图表, 日志分析]
 
 + 这里不考虑数据量巨大的情况,     
 + 打算用python解析日志, 得到每个图片的被访问次数, 并排序.     
-+ 然后把数据交给[Highcharts](http://www.hcharts.cn/)来展示. Highcharts是值得推荐的, 在网页上画统计图的js库. 
++ 然后把数据交给[Highcharts](http://www.hcharts.cn/)来展示. Highcharts是一个值得推荐的, 在网页上画统计图的js库. 
 
 ###定接口
+好吧, 想想并没有什么接口好定的. 最后决定的前端后端交互的过程是这样的:
+
++ 前端就是一个写死的html文件, 引入了Highcharts必备的js文件, 以及一个由后端生成的js/result.js文件. 
++ 后端处理好数据以后, 按js的格式保存在js/result.js里.
++ 前端页面在打开的时候, 执行js/result.js里的语句. 画出柱状图. 
+
+所以, 最后的文件目录结构是这样的:     
+
+|--log_charts.py  解析处理日志、并生成结果文件的python脚本    
+|--pic_access.log 将要被处理的日志文件    
+|--result.html 查看结果用的html文件     
+|--js/    
+  |--standalone-framework.src.js Highcharts需要的js文件    
+  |--result.js 程序运行生成的结果    
+
+###前端展示
+首先, 我还是先伪造点假的结果, 先把展示结果用的html文件写出来.     
+翻了Highcharts的文档, 仿照着写了:    
+js/result.js    
+
+```
+```
+
+result.html
+
+```
+```
+
+这样, 后端只要想办法把真实的数据替换到js/result.js文件里面就可以啦.    
+
 
 ###后端设计
+后端脚本的运行逻辑, 单纯点来考虑, 应该算是很简单的.     
+
+1. 读取文件的每一行.     
+2. 在获取到每一行时, 看是不是图片访问的记录. 如果是, 提取出图片md5值. 添加到字典里(key: 图片md5值, value: 原value值(默认为0) + 1)    
+3. 对字典按value值排序
+4. 按格式输出到js/result.js
+
+
+由于不同的人记录的日志, 它的输出格式不一样的几率比较大. 所以在程序的最开始, 定义一个全局变量: 匹配出一行中的图片md5值的正则表达式. 如果日志格式不一样, 修改这个正则表达式就可以了.     
 
 ###读日志
 
 ###统计次数
 
 ###排序
-
-###前端展示
 
 
