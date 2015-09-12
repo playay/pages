@@ -44,8 +44,8 @@ https://github.com/chenyanclyz/draw_charts_from_log
 |--pic_access.log 将要被处理的日志文件    
 |--result.html 查看结果用的html文件     
 |--js/    
-  |--standalone-framework.src.js  Highcharts 需要的js文件    
-  |--result.js 程序运行生成的结果    
+    |--standalone-framework.src.js  Highcharts 需要的js文件    
+    |--result.js 程序运行生成的结果    
 ```
 
 ###前端展示
@@ -70,7 +70,7 @@ https://github.com/chenyanclyz/draw_charts_from_log
 后端脚本的运行逻辑, 单纯点来考虑, 应该算是很简单的.     
 
 1. 读取文件的每一行.     
-2. 在获取到每一行时, 看是不是图片访问的记录. 如果是, 提取出图片md5值. 添加到字典里(key: 图片md5值, value: 原value值(默认为0) + 1)    
+2. 获取到每一行时, 看是不是图片访问的记录. 如果是, 提取出图片md5值. 添加到字典里(key: 图片md5值, value: 原value值(默认: 0) + 1)    
 3. 对字典按value值排序
 4. 按格式输出到 js/result.js
 
