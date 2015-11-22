@@ -20,7 +20,7 @@ function FindProxyForURL(url, host) {
         || shExpMatch(host,"*twimg*")
         || shExpMatch(host,"*gist*")
         ) {
-        return http; 
+        return socks5; 
     }
 
     return "DIRECT"; 
