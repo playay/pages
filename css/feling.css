@@ -5317,12 +5317,12 @@ a.uk-thumbnail:focus {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   padding-left: 20px;
-  padding-right: 50px;
+  padding-right: 5%;
 }
 @media (min-width: 1220px) {
   .uk-container {
   padding-left: 20px;
-  padding-right: 50px;
+  padding-right: 5%;
   }
 }
 .uk-container:before,
