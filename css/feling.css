@@ -7035,13 +7035,6 @@ a.uk-datepicker-table-muted {
     border: 1px solid #CCCCCC;
     padding: 6px 13px;
 }
-.markdown-body table tr {
-    background-color: #FFFFFF;
-    border-top: 1px solid #CCCCCC;
-}
-.markdown-body table tr:nth-child(2n) {
-    background-color: #F8F8F8;
-}
 .markdown-body img {
     max-width: 100%;
 }
