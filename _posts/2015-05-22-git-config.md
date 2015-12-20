@@ -1,7 +1,7 @@
 ---
 layout: post_with_left
 title: 我的git配置
-tags: play
+tags: config
 keywords: [git]
 ---
 

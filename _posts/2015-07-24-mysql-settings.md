@@ -1,7 +1,7 @@
 ---
 layout: post_with_left
 title: mysql默认字符集
-tags: play
+tags: config
 keywords: [mysql]
 ---
 

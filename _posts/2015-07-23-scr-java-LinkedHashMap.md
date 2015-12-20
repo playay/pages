@@ -1,6 +1,6 @@
 ---
 layout: post_with_left
-title: 系统地了解Map，读LinkedHashMap源码
+title: 读LinkedHashMap源码
 tags: srcJ
 keywords: [LinkedHashMap]
 ---
