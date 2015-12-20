@@ -5,7 +5,7 @@ tags: play
 keywords: [git]
 ---
 
-
+```
 [user]
 	name = chenyan
 	email = chenyan@feling.net
@@ -17,3 +17,4 @@ keywords: [git]
 	branch = auto
 [push]
 	default = simple
+```
