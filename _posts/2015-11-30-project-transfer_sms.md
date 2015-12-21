@@ -1,6 +1,6 @@
 ---
 layout: post_with_left_and_proxy_hint
-title: sl4a + python 实现自动转发短信
+title: sl4a + python 自动转发短信
 intro: 我有两个手机号。号码1只做收验证码用，因为使用太久了，绑定了各种帐号，又各种骚扰电话短信。号码2只有少数几个人知道。我希望出门就带着号码2，却又不能错过验证码短信。于是，我用 sl4a + python 写了个自动转发短信的小脚本。这样就可以少带一部烦人的手机出门啦，顺便还可以加点对骚扰短信的过滤。
 tags: project
 keywords: [开源项目, python, sl4a, 自动转发短信]
