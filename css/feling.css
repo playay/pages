@@ -7126,6 +7126,8 @@ a.uk-datepicker-table-muted {
     margin: 0;
     padding: 0;
     white-space: pre;
+    overflow: visible;
+    word-wrap: normal;
 }
 .markdown-body .highlight pre, .markdown-body pre {
     background-color: #F8F8F8;
