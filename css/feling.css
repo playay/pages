@@ -306,7 +306,7 @@ iframe {
     margin-top: 35px;
   }
 }
-@media (min-width: 360px) {
+@media (min-width: 300px) {
   .uk-grid {
     margin-left: 0px;
   }
