@@ -5319,12 +5319,6 @@ a.uk-thumbnail:focus {
   padding-left: 10px;
   padding-right: 10px;
 }
-@media (min-width: 1220px) {
-  .uk-container {
-  padding-left: 20px;
-  padding-right: 5%;
-  }
-}
 .uk-container:before,
 .uk-container:after {
   content: "";
