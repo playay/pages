@@ -25,6 +25,6 @@ alias lla='ls -laG'
 alias vi='vi -p'
 ```
 
-### bash_completion_git
+### bash_completion\_git
 
 https://github.com/git/git/tree/master/contrib/completion
