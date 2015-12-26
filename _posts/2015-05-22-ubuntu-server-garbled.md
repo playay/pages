@@ -1,5 +1,5 @@
 ---
-layout: post_with_left
+layout: post_with_left_and_proxy_hint
 title: ubuntu server 中文乱码
 tags: play
 keywords: [ubuntu, 中文乱码]

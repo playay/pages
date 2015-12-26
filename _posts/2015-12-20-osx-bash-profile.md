@@ -1,6 +1,6 @@
 ---
 
-layout: post_with_left
+layout: post_with_left_and_proxy_hint
 title: osx bash 配置
 tags: config
 keywords: [ bash, osx ]

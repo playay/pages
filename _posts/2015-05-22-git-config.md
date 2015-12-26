@@ -1,6 +1,6 @@
 ---
 
-layout: post_with_left
+layout: post_with_left_and_proxy_hint
 title: 我的git配置
 tags: config
 keywords: [git]
