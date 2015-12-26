@@ -20,6 +20,7 @@ function FindProxyForURL(url, host) {
         || shExpMatch(host,"*twitter*")
         || shExpMatch(host,"*twimg*")
         || shExpMatch(host,"*gist*")
+        || shExpMatch(host,"*github*")
         || shExpMatch(host,"*wikipedia*")
         || shExpMatch(host,"*wikimedia*")
         ) {
