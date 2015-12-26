@@ -30,5 +30,55 @@ Android 原生的开发也太庞大了。
 
 ###上代码
 
-{% gist chenyanclyz/8c94512bddb9b11c8a9d %}
+```python
+
+#coding:utf8
+'''\
+author: chenyan
+自动转发短信
+'''
+import android
+import time
+
+droid = android.Android()
+stop = False
+
+def not_harass(sms_body):
+    '''\
+    判断骚扰短信
+    '''
+    if '验证码' in sms_body\
+        or '校验码' in sms_body:
+        return True
+    if '您' in sms_body\
+        or '你好' in sms_body\
+        or '尊敬的' in sms_body\
+        or '长期' in sms_body\
+        or '本公司' in sms_body\
+        or '退订' in sms_body:
+        print '判断为骚扰短信，未转发：',sms_body,'\n'
+        return False
+    return True
+
+def do_transfer():
+    '''\
+    获取未读短信，检查短信内容，转发，标记为已读
+    '''
+    global stop
+    sms_id_list = droid.smsGetMessageIds(True).result
+    for sms_id in sms_id_list:
+        sms_body = droid.smsGetMessageById(sms_id)\
+                   .result['body']\
+                   .encode('utf8')
+        if sms_body == 'stop':
+            stop = True
+            return
+        if not_harass(sms_body):
+            droid.smsSend('1××××××4201', sms_body)
+    droid.smsMarkMessageRead(sms_id_list, True)
+
+while not stop:
+    do_transfer()
+    time.sleep(1.5)
+```
 
