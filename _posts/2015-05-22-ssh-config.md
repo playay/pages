@@ -1,8 +1,10 @@
 ---
+
 layout: post_with_left
 title: ssh远程登录-对每个用户单独配置
 tags: play
 keywords: [ssh]
+
 ---
 
 ###背景
@@ -21,7 +23,7 @@ keywords: [ssh]
 
 先给所有用户设置:    
 
-```
+```sh
 PermitRootLogin no
 UsePAM no
 PasswordAuthentication no
@@ -32,7 +34,7 @@ PasswordAuthentication no
 fq是希望能使用密码登录的用户组     
 
 
-```
+```sh
 Match Group fq
     PasswordAuthentication yes
 

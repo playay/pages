@@ -1,11 +1,13 @@
 ---
+
 layout: post_with_left
 title: 我的git配置
 tags: config
 keywords: [git]
+
 ---
 
-```
+```sh
 [user]
 	name = chenyan
 	email = chenyan@feling.net
