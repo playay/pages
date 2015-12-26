@@ -26,7 +26,7 @@ Android 原生的开发也太庞大了。
 
 
 ###环境
-这是 [sl4a_r6.apk](http://pages.feling.net/download/sl4a_r6.apk)，从 google code 搬到 github 上以后，安装包就不太好找了，居然找不到下载链接。
+这是 [sl4a_r6.apk](/download/sl4a_r6.apk)，从 google code 搬到 github 上以后，安装包就不太好找了，居然找不到下载链接。
 
 ###上代码
 
