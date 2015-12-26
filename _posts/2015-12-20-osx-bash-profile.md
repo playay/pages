@@ -8,13 +8,13 @@ keywords: [ bash, osx ]
 ---
 ### bash_profile
 
-```sh
+```
 [[ -s ~/.bashrc ]] && source ~/.bashrc
 ```
 
 ### bashrc
 
-```sh
+```
 [[ -s ~/.bash_completion_git ]] && source ~/.bash_completion_git
 
 alias ls='ls -G'
