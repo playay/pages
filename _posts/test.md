@@ -1,0 +1,71 @@
+---
+layout: post_with_left_and_proxy_hint
+title: vim 配置
+tags: config
+keywords: [vim, vimrc]
+---
+###bashrc
+
+```
+alias vi='vi -p'
+```
+
+
+###vimrc
+
+```
+"这个文件中, 等号两边不能有空格
+
+
+"snipmate  插件需要 filetType 为 markdown
+autocmd BufNewFile,BufRead *.{md,mkd,mkdn,mark*} set filetype=markdown
+
+"插件管理工具, 这个配置要写在最前面
+execute pathogen#infect()
+
+"语法高亮
+syntax on
+
+"换行符
+set fileformat=unix
+
+"状态栏标尺
+set ruler
+
+"显示行号
+set number
+
+"自动缩进
+set autoindent
+
+"制表符转换成空格
+set expandtab
+
+"制表符宽度
+set tabstop=4
+
+"格式化时制表符的宽度
+set shiftwidth=4
+
+"移动光标时，一次四个空格
+set softtabstop=4 
+
+"高亮当前行
+set cursorline
+
+```
+
+###插件
+
+####插件管理 pathogen
+https://github.com/tpope/vim-pathogen
+
+####vim-markdown
+https://github.com/plasticboy/vim-markdown
+
+####片段 snipmate
+http://www.vim.org/scripts/script.php?script_id=2540
+
+####跳转
+
+
