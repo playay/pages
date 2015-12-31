@@ -1,7 +1,9 @@
 ---
 layout: default_with_left_and_proxy_hint
 ---
+{% if 'donate' in page.tags %}
 <h2 class="uk-article-title">{{ page.title }}</h2>
+{% endif %}
 <p class="uk-article-meta"><a id="click_count"  href="javascript:void(0);" ></a>&nbsp;&nbsp;&nbsp;&nbsp;
 {% if page.id %}
 <!--页面点击数统计-->
