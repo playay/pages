@@ -1,18 +1,20 @@
 ---
+
 layout: post_with_left_and_proxy_hint
 title: ubuntu server 中文乱码
 tags: play
 keywords: [ubuntu, 中文乱码]
----
-
-###问题
 
 ---
 
-阿里云的主机， 默认装的Ubuntu server 12.04系统中文乱码
+### 问题
+
+---
+
+阿里云的主机， 默认装的 Ubuntu server 12.04系统中文乱码
 
 
-###解决方案
+### 解决方案
 
 ---
 
@@ -21,7 +23,7 @@ keywords: [ubuntu, 中文乱码]
 不需要改成中国的时区, en_US照样可以正常支持中文, 只要编码是utf8就行了.    
 
 
-使用`locale`命名查看当前配置
+使用 `locale` 命名查看当前配置
 
 ---
 Ubuntu 官网上说, 有两个文件用来配置时区:    
@@ -31,9 +33,9 @@ Ubuntu 官网上说, 有两个文件用来配置时区:
 /etc/environment
 ```
 
-实际用的时候, 其中一台机器只改了`/etc/default/locale`就可以了.    
+实际用的时候, 其中一台机器只改了 `/etc/default/locale` 就可以了.    
 
-但是另一台怎么改都无效. 感觉像是根本没运行配置文件. 实在没办法, 在`/etc/profile`里面export了配置. 
+但是另一台怎么改都无效. 感觉像是根本没运行配置文件. 实在没办法, 在 `/etc/profile` 里面export了配置. 
 
 附上配置的内容:   
 

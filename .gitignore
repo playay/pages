@@ -2,3 +2,6 @@
 *.swp
 
 _site/
+
+.idea/
+

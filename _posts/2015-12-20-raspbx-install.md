@@ -7,7 +7,7 @@ keywords: [ raspbx, GSM 转 VOIP ]
 
 ---
 
-###  终端里翻墙
+### 终端里翻墙
 ```
 export http_proxy=http://182.92.214.222:5088
 ```

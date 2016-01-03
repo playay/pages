@@ -1,11 +1,13 @@
 ---
+
 layout: post_with_left_and_proxy_hint
 title: ubuntu在校园网使用纯ipv6
 tags: play proxy
 keywords: [校园网, ubuntu, ipv6, 免登录, 免流量, 科学上网]
+
 ---
 
-###应用场景
+### 应用场景
 
 1. 校园网登录客户端的linux版本太旧, 新系统上用不了
 2. 校园网欠费, 或流量有限制
@@ -18,7 +20,7 @@ keywords: [校园网, ubuntu, ipv6, 免登录, 免流量, 科学上网]
 2001:778::37
 ```
 
-###ubuntu上的详细设置
+### ubuntu 上的详细设置
 截图如下:    
 
 ![禁用ipv4](/images/ipv6_setting0.png)

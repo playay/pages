@@ -1,12 +1,14 @@
 ---
+
 layout: post_with_left_and_proxy_hint
-title: mysql默认字符集
+title: mysql 默认字符集
 tags: config
 keywords: [mysql]
+
 ---
 
 
-在/etc/mysql/my.cnf里
+在 /etc/mysql/my.cnf 里
 
 
 [mysqld]下面添加
