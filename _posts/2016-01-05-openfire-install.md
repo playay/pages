@@ -23,6 +23,7 @@ apt-get install openjdk-7-jre
 卸载 `dpkg -P openfire`
 
 安装后的路径: `/ur/share/openfire`
+不知道可执行文件在哪, 我用的压缩包中的可执行文件运行的.
 
 ###web 管理端口
 `9090`
