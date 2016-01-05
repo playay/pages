@@ -2,19 +2,19 @@
 
 layout: post_with_left_and_proxy_hint
 title: ubuntu server 中文乱码
-tags: play
+tags: config
 keywords: [ubuntu, 中文乱码]
 
 ---
 
-### 问题
+###问题
 
 ---
 
 阿里云的主机， 默认装的 Ubuntu server 12.04系统中文乱码
 
 
-### 解决方案
+###解决方案
 
 ---
 

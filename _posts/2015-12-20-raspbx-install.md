@@ -2,7 +2,7 @@
 
 layout: post_with_left_and_proxy_hint
 title: raspbx 安装笔记
-tags: play
+tags: install
 keywords: [ raspbx, GSM 转 VOIP ]
 
 ---

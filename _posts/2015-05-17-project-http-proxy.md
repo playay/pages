@@ -7,13 +7,13 @@ keywords: [开源项目, python, http代理, gevent, 协程, 惊群]
 ---
 
 
-### 前言
+###前言
 
 ---
 
 这篇文章将会介绍一个 http 代理的实现过程...
 
-#### http 协议的文档
+####http 协议的文档
 关于网络协议的文档, 可以在这里查 https://www.ietf.org/ . 搜索文档编号就行. 目前关于http的文档有这几篇:    
 
 
@@ -25,11 +25,11 @@ keywords: [开源项目, python, http代理, gevent, 协程, 惊群]
 - https://tools.ietf.org/html/rfc7235    
 
 
-#### 项目 git 地址
+####项目 git 地址
 这个项目目前托管在 github 上: https://github.com/chenyanclyz/http_proxy    
 另外, 实际的程序部署在了阿里云的美国主机上, 欢迎帮忙试验它的性能和稳定性. 具体IP地址和端口号见[免费代理](/2015/05/proxy.html#http代理)    
 
-#### 最原始的实现原理
+####最原始的实现原理
 实现一个 http 代理的功能, 最容易想到的程序的运行过程, 可能是这样的:    
 
 1. 接收 http 请求    
@@ -39,7 +39,7 @@ keywords: [开源项目, python, http代理, gevent, 协程, 惊群]
 
 
 
-### 实现基本的功能
+###实现基本的功能
 
 ---
 
@@ -47,7 +47,7 @@ keywords: [开源项目, python, http代理, gevent, 协程, 惊群]
 这里不考虑性能, 对于性能的改善, 会在[改善性能](#改善性能)这一章中介绍.    
 
 
-#### 创建工程
+####创建工程
 一般来说, 一个目录就是一个工程, 这个目录下通常会有以下几个文件夹:    
 
 - bin/ 可执行文件    
@@ -58,7 +58,7 @@ keywords: [开源项目, python, http代理, gevent, 协程, 惊群]
 我们写的是 python 代码, 就不需要 src 文件夹了, 可执行文件就是源码, 所以建个 `http_proxy/bin/` 文件夹, 新建个 `http_proxy.py` 文件,这个工程就算创建好了.    
 
 
-#### 接收、解析、处理请求
+####接收、解析、处理请求
 我们用 socket 接收 http 请求. 首先, 写出一个 socket 程序的模板:    
 绑定、监听、启动新线程处理请求    
 {% gist chenyanclyz/5f2127c5d4ec675489a1 _socket.py %}
@@ -99,7 +99,7 @@ keywords: [开源项目, python, http代理, gevent, 协程, 惊群]
 {% gist chenyanclyz/5f2127c5d4ec675489a1 end_proxyer.py %}
 
 
-#### 得到响应并回传给请求方
+####得到响应并回传给请求方
 上一节中, 我们接收完了 http 请求, 并解析、处理了它. 算是完成了[最原始的实现原理](#最原始的实现原理)中的1、2两步. 最后留下了两个方法 `do_proxy()` 和 `do_tunnel()` . 实现这两个方法, 就算是完成了剩下的3、4两步.    
 
 先说下相对简短的 `do_tunnel()` . 要实现的是: 建立一条请求方到目标主机的隧道. 其实只要新建一个 socket 连到目标主机上, 然后把请求方的 socket 拿过来、对接上就OK了. 对接, 就是把一个 socket 收到的数据, 发给另一个 socket . 看代码:    
