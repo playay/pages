@@ -37,8 +37,9 @@ vncserver -kill :1
 
 ###开机自启动
 vi /etc/rc.local    
+
 ```sh
-/usr/bin/vncserver -name my-vnc-server -depth 16 -geometry 1366x728 :1
+su root -c '/usr/bin/vncserver -name my-vnc-server -depth 16 -geometry 1366x728 :1'
 ```
 
 ###修改密码
