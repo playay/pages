@@ -1,7 +1,7 @@
 ---
 
 layout: post_with_left_and_proxy_hint
-title: vncservice 安装笔记
+title: vnc4server 安装笔记
 tags: install
 keywords: [ vnc ]
 
