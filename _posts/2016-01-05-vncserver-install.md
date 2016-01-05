@@ -13,6 +13,7 @@ apt-get install vnc4server
 ```
 
 ###修改启动配置
+可能需要先 ``` 启动一下, 才能自动生成下面要修改的文件
 vi ~/.vnc/xstartup  
 注释掉 `x-window-manager &` 添加 `gnome-session &`
 
