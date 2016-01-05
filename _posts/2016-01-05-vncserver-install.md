@@ -1,18 +1,19 @@
 ---
 
 layout: post_with_left_and_proxy_hint
-title: vnc4server 安装笔记
+title: vncserver 安装笔记
 tags: install
 keywords: [ vnc ]
 
 ---
 
 ###安装
+```sh
 apt-get install vnc4server
-
+```
 
 ###修改启动配置
-vi ~/.vnc/xstartup
+vi ~/.vnc/xstartup  
 注释掉 `x-window-manager &` 添加 `gnome-session &`
 
 
@@ -34,7 +35,7 @@ vncserver -kill :1
 ```
 
 ###开机自启动
-vi /etc/rc.local
+vi /etc/rc.local    
 ```sh
 /usr/bin/vncserver -name my-vnc-server -depth 16 -geometry 1366x728 :1
 ```
