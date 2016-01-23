@@ -23,6 +23,8 @@ function FindProxyForURL(url, host) {
         || shExpMatch(host,"*github*")
         || shExpMatch(host,"*wikipedia*")
         || shExpMatch(host,"*wikimedia*")
+        || shExpMatch(host,"*xvideos*")
+        || shExpMatch(host,"*porn*")
         ) {
         return http + ";" + socks5; 
     }
