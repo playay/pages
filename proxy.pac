@@ -28,7 +28,7 @@ function FindProxyForURL(url, host) {
         || shExpMatch(host,"*porn*")
         || shExpMatch(host,"*shadowsocks*")
         ) {
-        return http + ";" + socks5; 
+        return socks5 + ";" + http; 
     }
 
     return "DIRECT"; 
