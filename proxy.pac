@@ -15,6 +15,7 @@ function FindProxyForURL(url, host) {
         || shExpMatch(host,"*gstatic*")
         || shExpMatch(host,"*youtube*")
         || shExpMatch(host,"*ytimg*")
+        || shExpMatch(host,"*ggpht*")
         || shExpMatch(host,"*facebook*")
         || shExpMatch(host,"*fbcdn*")
         || shExpMatch(host,"*twitter*")
