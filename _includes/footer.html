@@ -8,7 +8,8 @@ hosted by <a target="_blank" href="https://github.com/chenyanclyz/chenyanclyz.gi
 </div>
 
 {% for tag in page.tags %}
-{% if tag = 'proxy' %}
+{% case tag %}
+    {% when 'proxy' %}
 <div style="float:right;padding:0 10px;">
 <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 <!-- 320,100 -->
@@ -20,7 +21,7 @@ hosted by <a target="_blank" href="https://github.com/chenyanclyz/chenyanclyz.gi
 (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
 </div>
-{% endif %}
+{% endcase %}
 {% endfor %}
 
 <!--百度自动链接提交-->
