@@ -1,6 +1,6 @@
 ---
 
-layout: post_with_left_and_proxy_hint
+layout: post_with_left
 title: Spring @ResponseBody 注解导致 Accept-Charset 过长的问题
 tags: other
 keywords: [spring, accept-charset]
