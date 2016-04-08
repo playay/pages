@@ -32,4 +32,4 @@ http://git.oschina.net/chenyanclyz/curspeed
 
 ###续
 
-iftop 工具就可以在终端查看流量信息, 另: osx 系统用 brew 命令安装 iftop 后, 可执行文件的链接在 `/usr/local/sbin` 路径下, 需要自该 PATH 变量的内容的话, 可以编辑 `/etc/paths` 文件
+iftop 工具就可以在终端查看流量信息, 另: osx 系统用 brew 命令安装 iftop 后, 可执行文件的链接在 `/usr/local/sbin` 路径下, 需要修改 PATH 变量的内容的话, 可以编辑 `/etc/paths` 文件
