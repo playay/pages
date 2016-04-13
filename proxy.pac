@@ -27,6 +27,7 @@ function FindProxyForURL(url, host) {
         || shExpMatch(host,"*xvideos*")
         || shExpMatch(host,"*porn*")
         || shExpMatch(host,"*shadowsocks*")
+        || shExpMatch(host,"*weather*")
         ) {
         return socks5 + ";" + http; 
     }
