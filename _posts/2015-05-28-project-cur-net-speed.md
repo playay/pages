@@ -5,13 +5,13 @@ intro: 通过统计`ifconfig`的输出信息，计算当前网速。这是一个
 tags: project
 keywords: [开源项目, python3, 网速]
 ---
-###项目地址
+### 项目地址
 
 ---
 http://git.oschina.net/chenyanclyz/curspeed
 
 
-###基本原理
+### 基本原理
 
 ---
 在 Linux 上，可以用`ifconfig`命令查看到网络接口的信息，包括本次开机某个网络接口收发了多少字节的数据。    
@@ -23,13 +23,13 @@ http://git.oschina.net/chenyanclyz/curspeed
 我们使用 python 的 os.popen()执行 shell 命令，并得到命令的执行结果。用 re.sub()匹配出收发的总字节。    
     
     
-###代码示例
+### 代码示例
 {% gist chenyanclyz/4330e6fb489edc382e28 %}
 
 运行示例：    
 系统语言是中文，每隔1秒统计一次 eth0 接口的上传速度    
 `python curspeed.py eth0 tx cn 1`
 
-###续
+### 续
 
 iftop 工具就可以在终端查看流量信息, 另: osx 系统用 brew 命令安装 iftop 后, 可执行文件的链接在 `/usr/local/sbin` 路径下, 需要修改 PATH 变量的内容的话, 可以编辑 `/etc/paths` 文件

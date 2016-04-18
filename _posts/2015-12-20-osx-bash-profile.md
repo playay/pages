@@ -6,13 +6,13 @@ tags: config
 keywords: [ bash, osx ]
 
 ---
-###bash_profile
+### bash_profile
 
 ```sh
 [[ -s ~/.bashrc ]] && source ~/.bashrc
 ```
 
-###bashrc
+### bashrc
 
 ```sh
 [[ -s ~/.bash_completion_git ]] && source ~/.bash_completion_git
@@ -25,6 +25,6 @@ alias lla='ls -laG'
 alias vi='vi -p'
 ```
 
-###bash_completion\_git
+### bash_completion\_git
 
 https://github.com/git/git/tree/master/contrib/completion

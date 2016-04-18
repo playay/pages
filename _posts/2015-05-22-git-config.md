@@ -7,7 +7,7 @@ keywords: [git]
 
 ---
 
-###gitconfig
+### gitconfig
 
 ```
 [user]

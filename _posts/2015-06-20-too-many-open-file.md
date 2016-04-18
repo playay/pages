@@ -7,7 +7,7 @@ keywords: [too many open files]
 
 ---
 
-###balabala
+### balabala
 
 第一次碰到这问题的时候，才刚开始我的程序人生不久。当时都在往更改系统配置、提高'open files'上限的方向上找解决方案。因为程序上真的是找不到问题，该关的东西都关了。但是'open files'的上限设置生效不了，最后也不了了之了。    
 
