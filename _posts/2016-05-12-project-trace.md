@@ -29,7 +29,7 @@ logback 的文档中看到 MDC(Mapped Diagnostic Context) 类, 提供静态的�
 
 
 
-### rpc之基于HTTP关系的多系统间链路跟踪
+### rpc之基于HTTP的多系统间链路跟踪
 
 
 ### traceId 可以进化成什么样...
