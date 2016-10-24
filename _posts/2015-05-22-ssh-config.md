@@ -40,3 +40,17 @@ Match Group fq
 
 ```
 
+### by the way
+
+#### 客户端保持连接
+
+```sh
+ServerAliveInterval 60
+
+```
+
+
+
+
+
+
