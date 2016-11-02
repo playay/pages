@@ -16,6 +16,7 @@ keywords: [trace]
 
 常见的 web 服务器都是一个请求对应一个线程(或其子线程)来处理吧, 至少我没有见到过其他方式的服务器, 就算是用协程的方式, 在更上层的抽象使用上看起来也是与线程一样的. 所以, 在 threadlocal 里记录这个 id, 应该是最容易想到的方式吧.
 
+#### 日志打印
 目前项目使用 slf4j + logback 打印日志
 
 logback 的文档中看到 MDC(Mapped Diagnostic Context) 类, 提供静态的方法, 可以往 threadlocal 添加或删除键值对. 并在打印日志时, 通过 %X{key} 格式的pattern 打印出 MDC 类存放的 value. 

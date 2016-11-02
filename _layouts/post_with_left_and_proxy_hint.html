@@ -6,8 +6,9 @@ layout: default_with_left_and_proxy_hint
 {% endif %}
 <p class="uk-article-meta"><a id="click_count"  href="javascript:void(0);" ></a>&nbsp;&nbsp;&nbsp;&nbsp;
 {% if page.id %}
-<!--页面点击数统计-->
+<!--页面点击数统计
 <script async src="{{ site.ext_us_site }}/api/click_count?post_id={{ page.id }}"></script>
+-->
 {% endif %}
 {% for tag in page.tags %}
 {% case tag %}
