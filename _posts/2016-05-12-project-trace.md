@@ -33,13 +33,13 @@ logback 的文档中看到 MDC(Mapped Diagnostic Context) 类, 提供静态的�
 在一次http请求（mq消息的消费等等也是一样）的处理过程中。可能需要多线程的处理。这时候就需要在线程间传递traceId。
 
 ```java
-final Map<String, String> mdcMap = MDC.getCopyOfContextMap();
-        new Thread(() -> {
-            if (mdcMap != null) {
-                MDC.setContextMap(mdcMap);
-            }
-            logger.info("new thread start...");
-        }).start();
+	final Map<String, String> mdcMap = MDC.getCopyOfContextMap();
+	new Thread(() -> {
+	    if (mdcMap != null) {
+	        MDC.setContextMap(mdcMap);
+	    }
+	    logger.info("new thread start...");
+	}).start();
 
 ```
 
@@ -48,22 +48,24 @@ final Map<String, String> mdcMap = MDC.getCopyOfContextMap();
 
 
 
-### 多系统间链路跟踪
-#### HTTP
+### 多系统间链路跟踪 
+
+#### HTTP 
+
 在 header 里添加traceId并解析就好了：
 
 ```java
-    @Override
-    protected void doFilterInternal(HttpServletRequest request, 
-    								HttpServletResponse response, 
-    								FilterChain filterChain
-    								) throws ServletException, IOException {
-        MDC.put("traceId", request.getHeader("traceId") == null 
-        ? IdWorker.nextId("http") 
-        : request.getHeader("traceId"));
-        response.addHeader("traceId", MDC.get("traceId"));
-        filterChain.doFilter(request, response);
-    }
+	@Override
+	protected void doFilterInternal(HttpServletRequest request, 
+									HttpServletResponse response, 
+									FilterChain filterChain
+									) throws ServletException, IOException {
+	    MDC.put("traceId", request.getHeader("traceId") == null 
+	    ? IdWorker.nextId("http") 
+	    : request.getHeader("traceId"));
+	    response.addHeader("traceId", MDC.get("traceId"));
+	    filterChain.doFilter(request, response);
+	}
 
 ```
 
