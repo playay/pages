@@ -22,15 +22,51 @@ logback 的文档中看到 MDC(Mapped Diagnostic Context) 类, 提供静态的�
 
 按这个类的介绍, 它本身就是为分布式的大型系统的链路跟踪而设计的. 所以非常符合我们的要求. 虽然是静态方法, 但每个线程拿到的 MDC 都是一份各自的 copy(*如何透明的做出这种封装, 值得深入学习*). 所以它本身线程安全.
 
-在 web 项目的 filter 中, 用 MDC 给这个线程添加 traceId, 就能很好的满足单服务架构下链路跟踪的要求.
+#### 收到http请求时
+在 web 项目的 filter 中, 每来一次 http 请求，就用 MDC 给这个线程设置一个新的 traceId, 就能很好的满足单服务架构下链路跟踪的要求.
+
+
+#### 定时任务启动时
+除了收到 http 请求（mq消息，dubbo调用也是一样）这种代码开始执行的入口，定时任务也是一个代码开始执行的入口。所以，不要忘了在定时任务的开头设置traceId
+
+#### 线程间传递
+在一次http请求（mq消息的消费等等也是一样）的处理过程中。可能需要多线程的处理。这时候就需要在线程间传递traceId。
+
+```java
+final Map<String, String> mdcMap = MDC.getCopyOfContextMap();
+        new Thread(() -> {
+            if (mdcMap != null) {
+                MDC.setContextMap(mdcMap);
+            }
+            logger.info("new thread start...");
+        }).start();
+
+```
 
 #### by the way
 暂时使用 UUID 做为 traceId 就 OK 了, 但是今后这个 traceId 应该是友好的、可读的、带有信息量的甚至进化成一个短小的数据包. 
 
 
 
-### rpc之基于HTTP的多系统间链路跟踪
 
+### 基于HTTP的多系统间链路跟踪
+在 header 里添加traceId并解析就好了：
+
+```java
+    @Override
+    protected void doFilterInternal(HttpServletRequest request, HttpServletResponse response, FilterChain filterChain) throws ServletException, IOException {
+        MDC.put("traceId", request.getHeader("traceId") == null 
+        ? IdWorker.nextId("http") 
+        : request.getHeader("traceId"));
+        response.addHeader("traceId", MDC.get("traceId"));
+        filterChain.doFilter(request, response);
+    }
+
+```
+
+### 基于MQ的多系统间链路跟踪
+
+### 基于dubbo的多系统间链路跟踪
 
 ### traceId 可以进化成什么样...
 
