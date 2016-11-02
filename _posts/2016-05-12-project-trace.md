@@ -48,13 +48,16 @@ final Map<String, String> mdcMap = MDC.getCopyOfContextMap();
 
 
 
-
-### 基于HTTP的多系统间链路跟踪
+### 多系统间链路跟踪
+#### HTTP
 在 header 里添加traceId并解析就好了：
 
 ```java
     @Override
-    protected void doFilterInternal(HttpServletRequest request, HttpServletResponse response, FilterChain filterChain) throws ServletException, IOException {
+    protected void doFilterInternal(HttpServletRequest request, 
+    								HttpServletResponse response, 
+    								FilterChain filterChain
+    								) throws ServletException, IOException {
         MDC.put("traceId", request.getHeader("traceId") == null 
         ? IdWorker.nextId("http") 
         : request.getHeader("traceId"));
@@ -64,9 +67,9 @@ final Map<String, String> mdcMap = MDC.getCopyOfContextMap();
 
 ```
 
-### 基于MQ的多系统间链路跟踪
+#### MQ
 
-### 基于dubbo的多系统间链路跟踪
+#### dubbo
 
 ### traceId 可以进化成什么样...
 
