@@ -62,8 +62,8 @@ logback 的文档中看到 MDC(Mapped Diagnostic Context) 类, 提供静态的�
 									FilterChain filterChain
 									) throws ServletException, IOException {
 	    MDC.put("traceId", request.getHeader("traceId") == null 
-	    ? IdWorker.nextId("http") 
-	    : request.getHeader("traceId"));
+	    						? IdWorker.nextId("http") 
+	    						: request.getHeader("traceId"));
 	    response.addHeader("traceId", MDC.get("traceId"));
 	    filterChain.doFilter(request, response);
 	}
