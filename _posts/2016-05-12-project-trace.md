@@ -74,6 +74,16 @@ logback 的文档中看到 MDC(Mapped Diagnostic Context) 类, 提供静态的�
 
 #### dubbo
 
+参考dubbo官方文档，
+
+##### filter
+http://dubbo.io/Developer+Guide-zh.htm#DeveloperGuide-zh-%E8%B0%83%E7%94%A8%E6%8B%A6%E6%88%AA%E6%89%A9%E5%B1%95     
+
+##### 上下文
+http://dubbo.io/User+Guide-zh.htm#UserGuide-zh-%E4%B8%8A%E4%B8%8B%E6%96%87%E4%BF%A1%E6%81%AF
+
+添加对应的 traceId 解析和添加的过滤器
+
 ### traceId 可以进化成什么样...
 
 

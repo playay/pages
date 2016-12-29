@@ -1,4 +1,5 @@
 ---
+---
 
 layout: post_with_left_and_proxy_hint
 title: 我的 git 配置
@@ -15,6 +16,7 @@ keywords: [git]
 	email = chenyan@feling.net
 [alias]
 	st = status
+	co = checkout
 [color]
 	diff = auto
 	status = auto
