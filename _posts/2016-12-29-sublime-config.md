@@ -1,5 +1,4 @@
 ---
----
 
 layout: post_with_left_and_proxy_hint
 title: 我的 sublime 配置
