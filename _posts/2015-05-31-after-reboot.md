@@ -1,5 +1,5 @@
 ---
-layout: post _with_left
+layout: post_with_left
 title: 重启之后的几个screen
 tags: play
 keywords: []

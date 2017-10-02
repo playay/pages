@@ -1,6 +1,6 @@
 ---
 
-layout: post _with_left
+layout: post_with_left
 title: ubuntu server 中文乱码
 tags: config
 keywords: [ubuntu, 中文乱码]

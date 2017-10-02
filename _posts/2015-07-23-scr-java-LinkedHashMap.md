@@ -1,6 +1,6 @@
 ---
 
-layout: post _with_left
+layout: post_with_left
 title: 读 LinkedHashMap
 tags: srcJ
 keywords: [LinkedHashMap]

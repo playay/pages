@@ -1,5 +1,5 @@
 ---
-layout: post _with_left
+layout: post_with_left
 title: python 实现 http 代理
 intro: 基于 python 的 socket 实现的 http 代理, 用到了多进程+协程来提高性能. 
 tags: project

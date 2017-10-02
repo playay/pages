@@ -1,6 +1,6 @@
 ---
 
-layout: post _with_left
+layout: post_with_left
 title: mysql 默认字符集
 tags: config
 keywords: [mysql]

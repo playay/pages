@@ -1,6 +1,6 @@
 ---
 
-layout: post _with_left
+layout: post_with_left
 title: vncserver 安装笔记
 tags: install
 keywords: [ vnc ]

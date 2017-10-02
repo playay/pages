@@ -1,6 +1,6 @@
 ---
 
-layout: post _with_left
+layout: post_with_left
 title: 我的 sublime 配置
 tags: config
 keywords: [sublime]

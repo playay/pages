@@ -1,6 +1,6 @@
 ---
 
-layout: post _with_left
+layout: post_with_left
 title: ssh远程登录-对每个用户单独配置
 tags: config
 keywords: [ssh]
