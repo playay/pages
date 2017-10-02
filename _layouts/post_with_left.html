@@ -2,11 +2,8 @@
 layout: default_with_left
 ---
 
-{% if page.title != 'donate' %}
-<!-- donate 页面不用显示文章标题 -->
+{% if page.title != 'donate' %} <!-- donate 页面不用显示文章标题 begin-->
 <h2 class="uk-article-title">{{ page.title }}</h2>
-{% endif %}
-
 
 <p class="uk-article-meta">
 
@@ -38,10 +35,8 @@ layout: default_with_left
 
 </p>
 
-{% if page.title != 'donate' %}
-<!-- donate 页面不用显示文章标题（这里是标题下的横线） -->
 <hr/>
-{% endif %}
+{% endif %} <!-- donate 页面不用显示文章标题 end-->
 
 <article class="uk-article markdown-body" style="word-wrap:break-word;">
 <a></a>
