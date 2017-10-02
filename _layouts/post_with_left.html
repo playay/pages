@@ -3,14 +3,14 @@ layout: default_with_left
 ---
 
 {% if page.title != 'donate' %}
-<!-- donate 页面不用现实文章标题 -->
+<!-- donate 页面不用显示文章标题 -->
 <h2 class="uk-article-title">{{ page.title }}</h2>
 {% endif %}
 
 <p class="uk-article-meta"><a id="click_count" href="javascript:void(0);"></a>&nbsp;&nbsp;&nbsp;&nbsp;
 {% if page.id %}
 <!--页面点击数统计
-<script async src="{{ site.ext_us_site }}/api/click_count?post_id={{ page.id }}"></script>
+<script async src="http://us.feling.net/api/click_count?post_id={{ page.id }}"></script>
 -->
 {% endif %}
 
@@ -29,13 +29,22 @@ layout: default_with_left
 {% endfor %}
 </p>
 
+{% if page.title != 'donate' %}
+<!-- donate 页面不用显示文章标题（这里是标题下的横线） -->
 <hr/>
+{% endif %}
+
 <article class="uk-article markdown-body" style="word-wrap:break-word;">
 <a></a>
 {{ content }}
 <br/>
 <br/>
+
+{% if page.title != '项目索引' %}
+<!-- 项目索引页面不需要评论 -->
 <hr/>
 <p>如果你有github帐号, 可以在<a href="https://github.com/playlay/playlay.github.io/issues" target="_blank">这里评论</a>这篇文章</p>
+{% endif %}
+
 </article>
 
