@@ -1,5 +1,5 @@
 ---
-layout: post_with_left_and_proxy_hint
+layout: post _with_left
 title: 我的链路跟踪系统
 intro: 一个大型的系统, 往往由多个服务组成, 各个服务间存在着复杂的调用关系. 一个请求从打入系统到返回响应. 到底经过了哪些服务, 在每个服务中又经过了哪些代码, 每个阶段的响应时间如何. 这些都是一个链路跟踪系统该解决的问题. 它能帮助新加入项目的开发人员快速的了解系统间服务的关系, 发现系统性能瓶颈, 异常快速定位出问题的服务...
 tags: project
@@ -72,21 +72,13 @@ logback 的文档中看到 MDC(Mapped Diagnostic Context) 类, 提供静态的�
 
 #### MQ
 
+发送mq时，可以设置 header，接收方可以在 handleDeliver 方法中取出
+
 #### dubbo
 
-参考dubbo官方文档，
+参考dubbo官方文档，在 dubbo 上下文对象中加入 traceId，在 filter 中解析
 
 ##### filter
-http://dubbo.io/Developer+Guide-zh.htm#DeveloperGuide-zh-%E8%B0%83%E7%94%A8%E6%8B%A6%E6%88%AA%E6%89%A9%E5%B1%95     
 
 ##### 上下文
-http://dubbo.io/User+Guide-zh.htm#UserGuide-zh-%E4%B8%8A%E4%B8%8B%E6%96%87%E4%BF%A1%E6%81%AF
 
-添加对应的 traceId 解析和添加的过滤器
-
-### traceId 可以进化成什么样...
-
-
-### 自适应采样频率是怎么实现的
-
-### 基于采集的数据能进行哪些分析...

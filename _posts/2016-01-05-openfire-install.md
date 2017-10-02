@@ -1,6 +1,6 @@
 ---
 
-layout: post_with_left_and_proxy_hint
+layout: post _with_left
 title: openfire 安装笔记
 tags: install
 keywords: [ openfire ]

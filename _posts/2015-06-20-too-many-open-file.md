@@ -1,6 +1,6 @@
 ---
 
-layout: post_with_left_and_proxy_hint
+layout: post _with_left
 title: too many open files T.T
 tags: play
 keywords: [too many open files]

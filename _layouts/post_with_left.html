@@ -3,14 +3,18 @@ layout: default_with_left
 ---
 
 {% if page.title != 'donate' %}
+<!-- donate 页面不用现实文章标题 -->
 <h2 class="uk-article-title">{{ page.title }}</h2>
 {% endif %}
+
 <p class="uk-article-meta"><a id="click_count" href="javascript:void(0);"></a>&nbsp;&nbsp;&nbsp;&nbsp;
 {% if page.id %}
 <!--页面点击数统计
 <script async src="{{ site.ext_us_site }}/api/click_count?post_id={{ page.id }}"></script>
 -->
 {% endif %}
+
+
 {% for tag in page.tags %}
 {% case tag %}
     {% when 'proxy' %}
@@ -24,6 +28,7 @@ layout: default_with_left
 {% endcase %}
 {% endfor %}
 </p>
+
 <hr/>
 <article class="uk-article markdown-body" style="word-wrap:break-word;">
 <a></a>
@@ -31,6 +36,6 @@ layout: default_with_left
 <br/>
 <br/>
 <hr/>
-<p>如果你有github帐号, 可以在<a href="https://github.com/chenyanclyz/chenyanclyz.github.io/issues" target="_blank">这里评论</a>这篇文章</p>
+<p>如果你有github帐号, 可以在<a href="https://github.com/playlay/playlay.github.io/issues" target="_blank">这里评论</a>这篇文章</p>
 </article>
 

@@ -1,5 +1,5 @@
 ---
-layout: post_with_left_and_proxy_hint
+layout: post _with_left
 title: python 获取当前网速
 intro: 通过统计`ifconfig`的输出信息，计算当前网速。这是一个几分钟就能完成的小程序。主要是为了提供一个获取网速的的思路。
 tags: project
@@ -24,7 +24,7 @@ http://git.oschina.net/chenyanclyz/curspeed
     
     
 ### 代码示例
-{% gist chenyanclyz/4330e6fb489edc382e28 %}
+{% gist playlay/4330e6fb489edc382e28 %}
 
 运行示例：    
 系统语言是中文，每隔1秒统计一次 eth0 接口的上传速度    
