@@ -3,7 +3,7 @@
 layout: post_with_left
 title: mysql 默认字符集
 tags: config
-date: 2017-10-02 13:16:00
+update: 2017-10-02 13:16
 keywords: [mysql]
 
 ---

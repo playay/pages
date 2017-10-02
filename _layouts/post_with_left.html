@@ -10,7 +10,9 @@ layout: default_with_left
 
 <p class="uk-article-meta">
 
-最后更新: {{ page.date | date: '%Y-%m-%d'}}
+{% if page.update %}
+最后更新: {{ page.update }}
+{% endif %}
 
 <a id="click_count" href="javascript:void(0);"></a>&nbsp;&nbsp;&nbsp;&nbsp;
 {% if page.id %}
