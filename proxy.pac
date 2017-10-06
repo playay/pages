@@ -28,7 +28,6 @@ function FindProxyForURL(url, host) {
         || shExpMatch(host,"*xvideos*")
         || shExpMatch(host,"*porn*")
         || shExpMatch(host,"*sis001*")
-        || shExpMatch(host,"*shadowsocks*")
         || shExpMatch(host,"*rubygems*")
         || shExpMatch(host,"*weather*")
         ) {
