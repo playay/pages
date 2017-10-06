@@ -1,12 +1,13 @@
 var http = "PROXY 182.92.214.222:5088";
 
-var socks5 = "SOCKS5 182.92.214.222:2088";
+var socks5 = "SOCKS5 localhost:1080";
 
 function FindProxyForURL(url, host) {
     if (shExpMatch(host,"*qunar*")
         || shExpMatch(host,"*cn*")
         || shExpMatch(host,"*baidu*")
         || shExpMatch(host,"*bdstatic*")
+        || shExpMatch(host,"*aliyun*")
         ) {
         return "DIRECT"; 
     }
