@@ -11,13 +11,6 @@ layout: default_with_left
 最后更新: {{ page.update }}
 {% endif %}
 
-<a id="click_count" href="javascript:void(0);"></a>&nbsp;&nbsp;&nbsp;&nbsp;
-{% if page.id %}
-<!--页面点击数统计
-<script async src="http://us.feling.net/api/click_count?post_id={{ page.id }}"></script>
--->
-{% endif %}
-
 
 {% for tag in page.tags %}
 {% case tag %}
