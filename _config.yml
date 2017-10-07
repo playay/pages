@@ -2,7 +2,7 @@ title:          feling
 exclude:        ['README.md', 'CNAME']
 timezone:       Asia/shanghai
 encoding:       'utf-8'
-url:            http://pages.feling.net
+url:            https://pages.feling.net
 permalink:      /:year/:month/:title.html
 lsi:            true
 redcarpet:
