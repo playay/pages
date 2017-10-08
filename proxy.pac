@@ -4,10 +4,15 @@ var socks5 = "SOCKS5 localhost:1080";
 
 function FindProxyForURL(url, host) {
     if (shExpMatch(host,"*qunar*")
+        || shExpMatch(host,"*feling.io")
+        || shExpMatch(host,"*feling.net")
         || shExpMatch(host,"*.cn")
         || shExpMatch(host,"*baidu*")
         || shExpMatch(host,"*bdstatic*")
         || shExpMatch(host,"*aliyun*")
+        || shExpMatch(host,"*alicdn*")
+        || shExpMatch(host,"*mmstat*")
+        || shExpMatch(host,"*alipay*")
         ) {
         return "DIRECT"; 
     }
