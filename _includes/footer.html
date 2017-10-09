@@ -19,6 +19,7 @@ hosted by <a target="_blank" href="https://github.com/playlay/playlay.github.io"
         function() {
             if (!image.complete || !image.naturalWidth) {
                 image.src = ''
+                console.log('没能在1s内请求到谷歌的icon')
             } else {
                 (function() {
                     var cx = '005096245001006865205:ppf0w1efjoy';
