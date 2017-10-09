@@ -18,6 +18,7 @@ function FindProxyForURL(url, host) {
     }
 
     if (shExpMatch(host,"*google*")
+        || shExpMatch(host,"*chrome*")
         || shExpMatch(host,"*gstatic*")
         || shExpMatch(host,"*youtube*")
         || shExpMatch(host,"*ytimg*")
