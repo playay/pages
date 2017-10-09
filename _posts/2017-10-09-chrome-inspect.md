@@ -17,7 +17,7 @@ chrome://inspect
 
 ### 连接手机
 
-授权 usb 调试
+授权 ADB 调试
 
 
 ### 坑/进阶
