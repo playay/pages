@@ -13,13 +13,12 @@ hosted by <a target="_blank" href="https://github.com/playlay/playlay.github.io"
 </div>
 <br/>
 <script>
-    var image = new Image();
-    image.src = "https://www.google.com/images/branding/product/ico/googleg_lodp.ico";
+    var the_gfw = new Image();
+    the_gfw.src = "https://www.google.com/images/branding/product/ico/googleg_lodp.ico";
     setTimeout(
         function() {
-            if (!image.complete || !image.naturalWidth) {
-                image.src = ''
-                console.log('没能在1s内请求到谷歌的icon')
+            if (!the_gfw.complete || !the_gfw.naturalWidth) {
+                the_gfw.src = '' // 没能在1s内请求到谷歌的icon
             } else {
                 (function() {
                     var cx = '005096245001006865205:ppf0w1efjoy';
