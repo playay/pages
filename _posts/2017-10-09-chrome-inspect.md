@@ -9,11 +9,16 @@ keywords: [ webview ]
 ---
 
 
-### chrome 上打开 `chrome://inspect` 页面
+### chrome 上打开页面
 
-### 连接手机, 授权 usb 调试
+```
+chrome://inspect
+```
 
----
+### 连接手机
+
+授权 usb 调试
+
 
 ### 坑/进阶
 
