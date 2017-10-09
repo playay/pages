@@ -13,15 +13,20 @@ hosted by <a target="_blank" href="https://github.com/playlay/playlay.github.io"
 </div>
 <br/>
 <script>
-  (function() {
-    var cx = '005096245001006865205:ppf0w1efjoy';
-    var gcse = document.createElement('script');
-    gcse.type = 'text/javascript';
-    gcse.async = true;
-    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
-        '//cse.google.com/cse.js?cx=' + cx;
-    var s = document.getElementsByTagName('script')[0];
-    s.parentNode.insertBefore(gcse, s);
-  })();
+    var image = new Image();
+    image.onload = function(){
+        (function() {
+            var cx = '005096245001006865205:ppf0w1efjoy';
+            var gcse = document.createElement('script');
+            gcse.type = 'text/javascript';
+            gcse.async = true;
+            gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//cse.google.com/cse.js?cx=' + cx;
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(gcse, s);
+        })();
+    };
+    image.onerror = function(){
+    };
+    image.src = "https://www.google.com/images/branding/product/ico/googleg_lodp.ico";
 </script>
 
