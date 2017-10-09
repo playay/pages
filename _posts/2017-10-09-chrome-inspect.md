@@ -30,5 +30,5 @@ chrome://inspect
 
 微信内的webview，也可以通过这种方式调试，但是需要一些设置：
 
-1. 手机上打开网址 `http://debugx5.qq.com`
+1. 手机微信里打开网址 `http://debugx5.qq.com`
 2. 信息  ->  TBS 设置  ->  打开 TBS 内核 Inspector 调试功能
