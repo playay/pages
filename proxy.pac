@@ -30,6 +30,7 @@ function FindProxyForURL(url, host) {
         || shExpMatch(host,"*gist*")
         || shExpMatch(host,"*github*")
         || shExpMatch(host,"*wikipedia*")
+        || shExpMatch(host,"*stackoverflow*")
         || shExpMatch(host,"*wikimedia*")
         || shExpMatch(host,"*xvideos*")
         || shExpMatch(host,"*porn*")
