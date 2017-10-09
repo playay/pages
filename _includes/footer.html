@@ -17,7 +17,9 @@ hosted by <a target="_blank" href="https://github.com/playlay/playlay.github.io"
     image.src = "https://www.google.com/images/branding/product/ico/googleg_lodp.ico";
     setTimeout(
         function() {
-            if (image.complete && image.naturalWidth) {
+            if (!image.complete || !image.naturalWidth) {
+                image.src = ''
+            } else {
                 (function() {
                     var cx = '005096245001006865205:ppf0w1efjoy';
                     var gcse = document.createElement('script');
