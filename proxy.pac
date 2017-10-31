@@ -4,8 +4,6 @@ var socks5 = "SOCKS5 localhost:1080";
 
 function FindProxyForURL(url, host) {
     if (shExpMatch(host,"*qunar*")
-        || shExpMatch(host,"*feling.io")
-        || shExpMatch(host,"*feling.net")
         || shExpMatch(host,"*.cn")
         || shExpMatch(host,"*baidu*")
         || shExpMatch(host,"*bdstatic*")
@@ -37,6 +35,8 @@ function FindProxyForURL(url, host) {
         || shExpMatch(host,"*sis001*")
         || shExpMatch(host,"*rubygems*")
         || shExpMatch(host,"*weather*")
+        || shExpMatch(host,"*feling.io")
+        || shExpMatch(host,"*feling.net")
         ) {
         return socks5 + ";" + http; 
     }
