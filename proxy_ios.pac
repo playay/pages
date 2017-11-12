@@ -1,4 +1,4 @@
-var socks5 = "SOCKS5 feling.net:3088";
+var socks5 = "SOCKS5 feling.net:2088";
 
 function FindProxyForURL(url, host) {
     if (shExpMatch(host,"*qunar*")
