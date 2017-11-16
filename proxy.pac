@@ -10,6 +10,7 @@ function FindProxyForURL(url, host) {
         || shExpMatch(host,"*aliyun*")
         || shExpMatch(host,"*alicdn*")
         || shExpMatch(host,"*mmstat*")
+        || shExpMatch(host,"luckyeurope.feling.io")
         || shExpMatch(host,"*alipay*")
         ) {
         return "DIRECT"; 
