@@ -10,7 +10,6 @@ function FindProxyForURL(url, host) {
         || shExpMatch(host,"*aliyun*")
         || shExpMatch(host,"*alicdn*")
         || shExpMatch(host,"*mmstat*")
-        || shExpMatch(host,"luckyeurope.feling.io")
         || shExpMatch(host,"*alipay*")
         ) {
         return "DIRECT"; 
@@ -36,7 +35,6 @@ function FindProxyForURL(url, host) {
         || shExpMatch(host,"*sis001*")
         || shExpMatch(host,"*rubygems*")
         || shExpMatch(host,"*weather*")
-        || shExpMatch(host,"*feling.io")
         || shExpMatch(host,"*feling.net")
         ) {
         return socks5 + ";" + http; 
