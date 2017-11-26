@@ -4,6 +4,7 @@ title: python 实现 http 代理
 intro: 基于 python 的 socket 实现的 http 代理, 用到了多进程+协程来提高性能. 
 tags: project
 keywords: [开源项目, python, http代理, gevent, 协程, 惊群]
+
 ---
 
 
@@ -26,7 +27,7 @@ keywords: [开源项目, python, http代理, gevent, 协程, 惊群]
 
 
 #### 项目 git 地址
-这个项目目前托管在 github 上: https://github.com/chenyanclyz/http_proxy    
+这个项目目前托管在 github 上: https://github.com/playlay/http_proxy    
 <!-- 另外, 实际的程序部署在了阿里云的美国主机上, 欢迎帮忙试验它的性能和稳定性. 具体IP地址和端口号见[免费代理](/2015/05/proxy.html#http代理)     -->
 
 #### 最原始的实现原理
@@ -61,6 +62,7 @@ keywords: [开源项目, python, http代理, gevent, 协程, 惊群]
 #### 接收、解析、处理请求
 我们用 socket 接收 http 请求. 首先, 写出一个 socket 程序的模板:    
 绑定、监听、启动新线程处理请求    
+
 {% gist playlay/5f2127c5d4ec675489a1 _socket.py %}
 
 如上所示, 我们做到了: 来一个请求, 就启动一个线程. 在新的线程里, 用 `proxyer()` 接收请求并打印了出来.    
