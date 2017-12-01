@@ -8,9 +8,9 @@ update: 2017-12-02 01:11
 
 ---
 
-### mongo
+### Mongo
 ```java
-    Address deletedAddress = MongoClients.getCollection(MONGO_COLLECTION_NAME, Address.class)
+Address deletedAddress = MongoClients.getCollection(MONGO_COLLECTION_NAME, Address.class)
         .findOneAndUpdate(
                 and(
                         eq("userId", userId),
@@ -26,30 +26,30 @@ update: 2017-12-02 01:11
 ```
 
 ```java
-    MongoClientsWithSerializeNulls.getCollection(MONGO_COLLECTION_NAME, Address.class)
-            .find(
-                    and(
-                            eq("isDel", 0)
-                    )
-            )
-            .sort(descending("lastModified"))
-            .forEach((Consumer<Address>) sddress -> result.add(address.getAddressId()));
+MongoClientsWithSerializeNulls.getCollection(MONGO_COLLECTION_NAME, Address.class)
+        .find(
+                and(
+                        eq("isDel", 0)
+                )
+        )
+        .sort(descending("lastModified"))
+        .forEach((Consumer<Address>) sddress -> result.add(address.getAddressId()));
 ```
 
 ```java
-        FindOneAndReplaceOptions option = new FindOneAndReplaceOptions();
-        option.sort(descending("version"));
-        option.upsert(true);
-        option.projection(exclude("fillDocSize"));
+FindOneAndReplaceOptions option = new FindOneAndReplaceOptions();
+option.sort(descending("version"));
+option.upsert(true);
+option.projection(exclude("fillDocSize"));
 
-        UserData oldUserData = collection.findOneAndReplace(
-                and(
-                        eq("userId", "xxx"),
-                        eq("isDel", 0)
-                ),
-                userData,
-                option
-        );
+UserData oldUserData = collection.findOneAndReplace(
+        and(
+                eq("userId", "xxx"),
+                eq("isDel", 0)
+        ),
+        userData,
+        option
+);
 ```
 
 
