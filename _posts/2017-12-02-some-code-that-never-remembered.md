@@ -52,6 +52,23 @@ UserData oldUserData = collection.findOneAndReplace(
 );
 ```
 
+```java
+Document findFilter = new Document().append("isDel", 0));
+
+if (StringUtils.isNotEmpty(userId)) {
+    findFilter.append("userId", userId);
+}
+if (xxTimeStart != null) {
+    findFilter.append("xxTime", new Document().append("$gte", xxTimeStart));
+}
+if (xxTimeEnd != null) {
+    findFilter.append("xxTime",
+            (findFilter.get("xxTime") == null ? new Document() : (Document) findFilter.get("xxTime"))
+            .append("$lt", xxTimeEnd)
+    );
+}
+```
+
 
 ### JodaTime
 ```java
