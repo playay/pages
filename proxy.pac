@@ -37,6 +37,7 @@ function FindProxyForURL(url, host) {
         || shExpMatch(host,"*weather*")
         || shExpMatch(host,"*feling.net")
         || shExpMatch(host,"*feling.io")
+        || shExpMatch(host,"*amazonaws*")
         ) {
         return socks5 + ";" + http; 
     }
