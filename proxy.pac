@@ -1,6 +1,6 @@
-var http = "PROXY 182.92.214.222:5088";
+var http = "PROXY localhost:1087";
 
-var socks5 = "SOCKS5 localhost:1080";
+var socks5 = "SOCKS5 localhost:1086";
 
 function FindProxyForURL(url, host) {
     if (shExpMatch(host,"*qunar*")
