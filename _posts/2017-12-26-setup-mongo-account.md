@@ -1,0 +1,52 @@
+---
+
+layout: post_with_left
+title: 给开发人员配置 mongodb 账号
+tags: config
+update: 2017-12-26 00:45
+keywords: [ mongodb, account ]
+
+---
+
+### 说明
+这篇文章纯属胡扯。。。
+
+### 没有密码
+刚装好的数据库默认不需要账号密码
+
+### 新建 dba 用户
+要想给开发人员分配账户密码。首先，要创建一个 dba 用户。像这样: 
+
+1. 切换到 admin 这个 db 下
+2. 创建一个 dba 用户
+
+```js
+use admin
+
+db.createUser(
+   {
+     user: "dba",
+     pwd: "woshiyigedba",
+     roles: [ { role: "userAdminAnyDatabase", db: "admin" } ]
+   }
+)
+```
+
+### 新建普通用户
+然后用 dba 用户来操作, 创建给开发人员用的数据库、账号密码。
+像这样: 
+
+1. 创建数据库 `shujukumingzi`
+2. 在这个数据库下，创建账号密码 `yonghuming/mima`
+
+```js
+use shujukumingzi
+
+db.createUser(
+   {
+     user: "yonghuming",
+     pwd: "mima",
+     roles: [ { role: "readWrite", db: "shujukumingzi" } ]
+   }
+)
+```
