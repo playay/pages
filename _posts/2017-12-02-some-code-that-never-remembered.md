@@ -10,18 +10,22 @@ update: 2017-12-08 17:41
 
 ### Mongo
 ```java
-Address deletedAddress = MongoClients.getCollection(MONGO_COLLECTION_NAME, Address.class)
+FindOneAndUpdateOptions options = new FindOneAndUpdateOptions();
+options.upsert(true);
+
+MongoClients.getCollection("userInfo", UserInfo.class)
         .findOneAndUpdate(
-                and(
-                        eq("userId", userId),
-                        eq("addressId", addressId),
-                        eq("isDel", 0)
-                ),
-                combine(
-                        set("isDel", 1),
-                        inc("version", 1),
-                        currentDate("lastModified")
-                )
+            and(
+                    eq("isDel", 0),
+                    eq("userId", tokeninfo.getSub())
+            ),
+            combine(
+                    set("accessToken", accessToken),
+                    set("accessTokenExpiredAt", DateTime.now().plusDays(30)),
+                    currentDate("lastModified"),
+                    setOnInsert("firstCreated", new Date())
+            ),
+            options
         );
 ```
 
