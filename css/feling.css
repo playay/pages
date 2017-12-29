@@ -7251,6 +7251,10 @@ div.go-top div.stick {
     overflow: hidden;
 }
 
+.clickable-header:target {
+  padding-top:44px;
+}
+
 #gcs .gsc-search-button {
     display: none;
 }
