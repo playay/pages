@@ -61,6 +61,7 @@ $(function() {
       html = settings.title + " <"+settings.listType+">";
     headers
     .addClass('clickable-header')
+    .addClass('target-fix')
     .each(function(_, header) {
       this_level = get_level(header);
       if (!settings.noBackToTopLinks && this_level === highest_level) {
