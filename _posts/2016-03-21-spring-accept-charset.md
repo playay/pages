@@ -1,7 +1,7 @@
 ---
 
 layout: post_with_left
-title: ResponseBody注解 导致 Accept-Charset 过长
+title: ResponseBody 注解导致 Accept-Charset 过长
 tags: other
 keywords: [spring, accept-charset]
 
