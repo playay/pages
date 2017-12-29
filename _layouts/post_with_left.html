@@ -2,7 +2,7 @@
 layout: default_with_left
 ---
 
-{% if page.title != 'donate' and page.title != '项目索引'%} <!-- donate 页面不用显示文章标题 begin-->
+{% if page.title != 'donate' %} <!-- donate 页面不用显示文章标题 begin-->
 <h2 class="uk-article-title">{{ page.title }}</h2>
 
 <p class="uk-article-meta">
@@ -14,10 +14,6 @@ layout: default_with_left
 
 {% for tag in page.tags %}
 {% case tag %}
-    {% when 'proxy' %}
-        <a href="/2015/05/proxy.html">{{ tag }}</a>&nbsp;&nbsp;&nbsp;&nbsp;
-    {% when 'project' %}
-        <a href="/2015/05/project-index.html">{{ tag }}</a>&nbsp;&nbsp;&nbsp;&nbsp;
     {% when 'donate' %}
         &nbsp;&nbsp;&nbsp;&nbsp;
     {% else %}
@@ -37,11 +33,8 @@ layout: default_with_left
 <br/>
 <br/>
 
-{% if page.title != '项目索引' %}
-<!-- 项目索引页面不需要评论 -->
 <hr/>
 <p>如果你有github帐号, 可以在<a href="https://github.com/playlay/playlay.github.io/issues" target="_blank">这里评论</a>这篇文章</p>
-{% endif %}
 
 </article>
 
