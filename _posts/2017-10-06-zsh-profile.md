@@ -10,7 +10,16 @@ keywords: [ zsh ]
 ### zshrc
 
 ```sh
-plugins=(mvn git autojump extract encode64 urltools zsh-syntax-highlighting go)
+plugins=(
+    pip
+    mvn
+    git
+    extract
+    encode64
+    urltools
+    zsh-syntax-highlighting
+    go
+)
 ```
 
 
