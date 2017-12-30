@@ -10,13 +10,10 @@ keywords: [ zsh ]
 ### zshrc
 
 ```sh
-plugins=(git autojump extract encode64 urltools zsh-syntax-highlighting go)
+plugins=(mvn git autojump extract encode64 urltools zsh-syntax-highlighting go)
 ```
 
 
-```sh
-eval $(thefuck --alias kao)
-```
 
 ```sh
 alias vi='vi -p'
