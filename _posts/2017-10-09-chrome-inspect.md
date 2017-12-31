@@ -2,7 +2,7 @@
 
 layout: post_with_left
 title: chrome 调试安卓真机上的网页
-tags: play
+tags: other
 update: 2017-10-09 15:45
 keywords: [ webview ]
 
