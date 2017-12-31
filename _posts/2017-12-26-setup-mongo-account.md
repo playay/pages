@@ -9,7 +9,7 @@ keywords: [ mongodb, account ]
 ---
 
 ### 说明
-这篇文章纯属胡扯。。。
+这篇文章纯属胡扯。。。正经配置方法, 请参考官方文档
 
 ### 没有密码
 刚装好的数据库默认不需要账号密码
@@ -40,6 +40,9 @@ db.createUser(
 2. 在这个数据库下，创建账号密码 `yonghuming/mima`
 
 ```js
+use admin
+db.auth("dba", "woshiyigedba")
+
 use shujukumingzi
 
 db.createUser(
