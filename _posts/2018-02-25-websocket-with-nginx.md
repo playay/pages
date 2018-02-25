@@ -28,9 +28,9 @@ keywords: [websocket, nginx, wss]
 
 ### 再解释一下
 
-为什么我想配置的是 websocket，但是配置的内容跟普通的 http 代理转发那么像，proxy_pass 项的值配置的是 websocket 服务的ip 和端口，但是却是 http 开头的呢？     
+为什么我想配置的是 websocket, 但是配置的内容跟普通的 http 代理转发那么像, proxy_pass 项的值配置的是 websocket 服务的 ip 和端口, 但是却是 http 开头的呢？     
 
-可以这么自我安慰的解释下： websocket 连接在建立的过程中，是依赖于 http 的。    
-首先，客户端发出的是 http 请求，只不过带了一些特殊的 header。之后，一系列的操作处理完成，大家才开始完全换了一种语言，开始了 websocket 的交流。     
+可以这么自我安慰的解释下: websocket 连接在建立的过程中, 是依赖于 http 的。    
+首先, 客户端发出的是 http 请求, 只不过带了一些特殊的 header。之后, 一系列的操作处理完成, 大家才开始完全换了一种语言, 开始了 websocket 的交流。     
 
-对于 wss 不需要任何额外的配置，原先 https 的配置，直接对 wss 生效。      
+对于 wss 不需要任何额外的配置, 原先 https 的配置, 直接对 wss 生效。      
