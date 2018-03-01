@@ -1,7 +1,7 @@
 ---
 
 layout: post_with_left
-title: 读 LinkedHashMap
+title: 读LinkedHashMap
 tags: srcJ
 keywords: [LinkedHashMap]
 
