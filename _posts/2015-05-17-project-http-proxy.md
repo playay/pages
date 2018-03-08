@@ -27,7 +27,7 @@ keywords: [开源项目, python, http代理, gevent, 协程, 惊群]
 
 
 #### 项目 git 地址
-这个项目目前托管在 github 上: https://github.com/playlay/http_proxy    
+这个项目目前托管在 github 上: https://github.com/playay/http_proxy    
 <!-- 另外, 实际的程序部署在了阿里云的美国主机上, 欢迎帮忙试验它的性能和稳定性. 具体IP地址和端口号见[免费代理](/2015/05/proxy.html#http代理)     -->
 
 #### 最原始的实现原理
@@ -63,7 +63,7 @@ keywords: [开源项目, python, http代理, gevent, 协程, 惊群]
 我们用 socket 接收 http 请求. 首先, 写出一个 socket 程序的模板:    
 绑定、监听、启动新线程处理请求    
 
-{% gist playlay/5f2127c5d4ec675489a1 _socket.py %}
+{% gist playay/5f2127c5d4ec675489a1 _socket.py %}
 
 如上所示, 我们做到了: 来一个请求, 就启动一个线程. 在新的线程里, 用 `proxyer()` 接收请求并打印了出来.    
 
@@ -75,7 +75,7 @@ keywords: [开源项目, python, http代理, gevent, 协程, 惊群]
 什么时候结束循环呢? 用 socket 接收 http 请求的数据, 最开始收到的肯定是请求头, 请求头以 `\r\n\r\n` 结束.    
 如果是 GET、HEAD、CONNECT 方法的请求，接收完请求头就表示已经完整接收请求.    
 所以对于 GET、HEAD、CONNECT 方法可以这样做:    
-{% gist playlay/5f2127c5d4ec675489a1 recv_request0.py %}
+{% gist playay/5f2127c5d4ec675489a1 recv_request0.py %}
 
 但如果是 POST 方法, 在请求头接收完之后可能还有数据. http 协议在中, 有两种方式判断 POST 请求是否接收完整:    
 
@@ -85,31 +85,31 @@ keywords: [开源项目, python, http代理, gevent, 协程, 惊群]
 如果两种都不包含, 默认用第二种方式, 如果两种都包含, 用第二种方式.    
 `Transfer-Encoding` 在完整协议里有很多个可选值, 这里只当它是 chunked (实际上网时, 我只见过这一种). 它表示: 最后会发一个空的 socket 包来标记数据发送完毕.    
 实际中我也只见过第一种方式的 POST 请求. 不管怎样, 解析请求头是必须的, 解析的代码如下:    
-{% gist playlay/5f2127c5d4ec675489a1 parse_request.py %}
+{% gist playay/5f2127c5d4ec675489a1 parse_request.py %}
 
 有了解析请求头的方法, 就能在接收请求的时候, 加上对 POST 方法的支持:    
-{% gist playlay/5f2127c5d4ec675489a1 recv_request1.py %}
+{% gist playay/5f2127c5d4ec675489a1 recv_request1.py %}
 
 ---
 
 对于 http 请求, 还有最后一步, 按照协议规定: 浏览器发给代理的请求头, 与正常的请求头是不一样的, 所以我们还要对请求头做一些修改, 才能转给目的主机.    
 修改请求头的代码如下:    
-{% gist playlay/5f2127c5d4ec675489a1 modify_request.py %}
+{% gist playay/5f2127c5d4ec675489a1 modify_request.py %}
 
 
 修改完了请求头, 就该用它去获取响应了, 但是 CONNECT 方法的请求比较特殊, 如果是 CONNECT 方法, 接下来要做的不是获取响应, 而是建立一条到目标主机的隧道. 所以我们准备好两个方法 `do_proxy()` 和 `do_tunnel()` . 下一节中我们会分别实现这两个方法.    
-{% gist playlay/5f2127c5d4ec675489a1 end_proxyer.py %}
+{% gist playay/5f2127c5d4ec675489a1 end_proxyer.py %}
 
 
 #### 得到响应并回传给请求方
 上一节中, 我们接收完了 http 请求, 并解析、处理了它. 算是完成了[最原始的实现原理](#最原始的实现原理)中的1、2两步. 最后留下了两个方法 `do_proxy()` 和 `do_tunnel()` . 实现这两个方法, 就算是完成了剩下的3、4两步.    
 
 先说下相对简短的 `do_tunnel()` . 要实现的是: 建立一条请求方到目标主机的隧道. 其实只要新建一个 socket 连到目标主机上, 然后把请求方的 socket 拿过来、对接上就OK了. 对接, 就是把一个 socket 收到的数据, 发给另一个 socket . 看代码:    
-{% gist playlay/5f2127c5d4ec675489a1 dock_socket.py %}
+{% gist playay/5f2127c5d4ec675489a1 dock_socket.py %}
 
 因为我们只做短连接, 所以如果数据方向是响应方发给请求方的, 就可以 close 掉 socket 了. 这就是 `recv_from_response` 的含义    
 基于 `dock_socket()` 方法, `do_tunnel()` 的实现如下:    
-{% gist playlay/5f2127c5d4ec675489a1 do_tunnel.py %}
+{% gist playay/5f2127c5d4ec675489a1 do_tunnel.py %}
 
 ```
 其实, 第13、14行是我瞎写的. 没经过测试. 因为我当时直接用的gevent写这段代码. 在`改善性能`这章中会写到.    
@@ -129,10 +129,10 @@ keywords: [开源项目, python, http代理, gevent, 协程, 惊群]
 除了接收响应需要像接收请求时一样, 要注意如何完整接收报文之外. 并没有什么麻烦的地方.    
 
 既然是像接收请求一样就收响应, 还是要先解析响应报文头:    
-{% gist playlay/5f2127c5d4ec675489a1 parse_response.py %}
+{% gist playay/5f2127c5d4ec675489a1 parse_response.py %}
 
 然后完成 `do_proxy()` 方法:    
-{% gist playlay/5f2127c5d4ec675489a1 do_proxy.py %}
+{% gist playay/5f2127c5d4ec675489a1 do_proxy.py %}
 
 其实, 去掉各种 try, 还有对响应完整性的判断, 上面这段代码也就剩下:    
 
@@ -160,18 +160,18 @@ soc.send(buf)
 
 时隔好久才来续写这篇文章，有点不想介绍 gevent 的使用了。这些可以直接看官方的文档。下面直接贴上代码，用 gevent 改写了两个地方。第一个是程序入口处：   
 
-{% gist playlay/5f2127c5d4ec675489a1 gevent0.py %}
+{% gist playay/5f2127c5d4ec675489a1 gevent0.py %}
 
 还有一个是 `do_tunnel()` 方法：    
 
-{% gist playlay/5f2127c5d4ec675489a1 gevent1.py %}
+{% gist playay/5f2127c5d4ec675489a1 gevent1.py %}
 
 在不考虑底层实现的情况下，可以把协程当成线程来用，他们提供的使用方式都是相近的。
 
 #### 多进程
 在一台多核 CPU 的电脑上, 与 CPU 核心数相同的进程数多数情况下能带来较大的性能.    
 我们稍微修改一下程序的入口. 在为这个程序配置了监听的端口号之后, fork 出与 CPU 核心数相同个数的进程, 然后开始监听.   
-{% gist playlay/5f2127c5d4ec675489a1 multi_process.py %}
+{% gist playay/5f2127c5d4ec675489a1 multi_process.py %}
 
 这样很容易想到一个问题, 当一个请求来的时候, 这几个进程都会接收这个请求并处理? 其实这叫做`惊群现象`, 网上有资料说: 在系统的内核层面会处理这个问题, 内核会负责分配这些请求到各个进程. 程序实际运行过程中, 来的每个请求确实也只被分配到一个进程中处理.    
 

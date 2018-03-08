@@ -24,7 +24,7 @@ http://git.oschina.net/chenyanclyz/curspeed
     
     
 ### 代码示例
-{% gist playlay/4330e6fb489edc382e28 %}
+{% gist playay/4330e6fb489edc382e28 %}
 
 运行示例：    
 系统语言是中文，每隔1秒统计一次 eth0 接口的上传速度    
