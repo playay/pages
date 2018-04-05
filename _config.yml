@@ -1,5 +1,6 @@
 title:          pages.feling.net
 exclude:        ['README.md', 'CNAME']
+include:        ['.well-known']
 timezone:       Asia/shanghai
 encoding:       'utf-8'
 url:            https://pages.feling.net
