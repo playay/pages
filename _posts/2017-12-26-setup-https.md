@@ -13,18 +13,8 @@ keywords: [ https, certbot ]
 `https://certbot.eff.org/`
 
 
-### 添加域名
-目前还不支持通配符, 需要一个一个加。 新加 域名时, 用 -d 参数把新的、旧的域名都写上
-
+### 通配符域名
 ```sh
-certbot --expand -d feling.io,www.feling.io,feling.net,www.feling.net,pages.feling.net,api.feling.io
+certbot certonly  --expand -d "feling.io,*.feling.io,feling.net,*.feling.net" --server https://acme-v02.api.letsencrypt.org/directory  --manual
 ```
-
-
-
-### 证书有效期
-配置个定时任务。下面这个命令会先判断证书有效期，快过期了才会实际去执行更新证书的操作
-
-```sh
-0 0 * * * certbot renew > /root/certbot.log
-```
+只能手动 renew 
