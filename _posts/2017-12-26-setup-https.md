@@ -15,7 +15,9 @@ keywords: [ https, certbot ]
 
 ### 通配符域名
 ```sh
-certbot certonly  --expand -d "feling.io,*.feling.io,feling.net,*.feling.net" --server https://acme-v02.api.letsencrypt.org/directory  --manual
+certbot certonly --manual\
+--expand -d "feling.io,*.feling.io,feling.net,*.feling.net"\
+--server https://acme-v02.api.letsencrypt.org/directory
 ```
 
 只能手动 renew 
