@@ -53,3 +53,8 @@ db.createUser(
    }
 )
 ```
+
+### ..
+```sh
+docker exec -it mongo0 mongo admin
+```
