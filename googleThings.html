@@ -1,110 +1,65 @@
 <div>
-    <!-- 谷歌分析 -->
-    <!-- Global Site Tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-62897210-2"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-        gtag('config', 'UA-62897210-2');
-    </script>
-
-    <!-- 谷歌一键登录 -->
-    <script src="https://smartlock.google.com/client"></script>
-    <script>
-        function signInWithGoogle(userClick) {
-            if (userClick) {
+        <!-- 谷歌分析 -->
+        <!-- Global Site Tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-62897210-2"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() { dataLayer.push(arguments); }
+            gtag('js', new Date());
+            gtag('config', 'UA-62897210-2');
+        </script>
+    
+        <!-- 谷歌登录 -->
+        <script src="https://apis.google.com/js/platform.js?onload=onGapiLoad" async defer></script>
+        <script>
+            function useGoogleIdTokenForAuth(idToken) {
                 $('#signInSpinner').show()
-            }
-            const retrievePromise = googleyolo.retrieve({
-                supportedAuthMethods: [
-                    "https://accounts.google.com"
-                ],
-                supportedIdTokenProviders: [
+                WithFParams.postForm('/login/withGoogle',
                     {
-                        uri: "https://accounts.google.com",
-                        clientId: "1093205252929-cm3ev302entgv6kutudb7i077je31g3r.apps.googleusercontent.com"
-                    }
-                ]
-            });
-            retrievePromise.then((credential) => {
-                $('#signInSpinner').hide()
-                if (credential.idToken) {
-                    useGoogleIdTokenForAuth(credential.idToken)
-                }
-            }, (error) => {
-                $('#signInSpinner').hide()
-                if (error.type === 'requestFailed' && userClick) {
-                    UIkit.modal.alert('谷歌一键登录操作失败, 请确认网络环境')
-                }
-                if (error.type === 'noCredentialsAvailable') {
-                    const hintPromise = googleyolo.hint({
-                        supportedAuthMethods: [
-                            "https://accounts.google.com"
-                        ],
-                        supportedIdTokenProviders: [
-                            {
-                                uri: "https://accounts.google.com",
-                                clientId: "1093205252929-cm3ev302entgv6kutudb7i077je31g3r.apps.googleusercontent.com"
-                            }
-                        ]
-                    });
-                    hintPromise.then((credential) => {
-                        if (credential.idToken) {
-                            useGoogleIdTokenForAuth(credential.idToken);
-                        }
-                    }, (error) => {
-                        switch (error.type) {
-                            case "userCanceled":
-                                localStorage.userCanceledLogin = true
-                                break;
-                            case "noCredentialsAvailable":
-                                if (userClick) {
-                                    UIkit.modal.alert('谷歌一键登录操作失败, 未找到可授权的谷歌账号。请先在浏览器其他窗口登录任一谷歌产品，然后刷新本页面')
-                                }
-                            break;
-                            default:
-                        }
-                    });
-                }
-            });
-        }
-
-        function useGoogleIdTokenForAuth(idToken) {
-            $('#signInSpinner').show()
-            WithFParams.postForm('/login/withGoogle',
-                {
-                    "idToken": idToken
-                },
-                function loginResultHandler(result) {
-                    if (result.success) {
-                        localStorage.accessToken = result.data.accessToken
-                        localStorage.userAvatar = result.data.userAvatar
-                        localStorage.userName = result.data.userName
-                        loadUserAvatarAndNameFormLocalStorage2ShowInNavBar()
-                    } else {
-                        localStorage.removeItem('accessToken')
-                    }
-                }
-            ).always(() => {
-                $('#signInSpinner').hide()
-            })
-        }
-        window.onGoogleYoloLoad = (googleyolo) => {
-            googleyolo = googleyolo
-            if (localStorage.accessToken) {
-                $("#signInButton").hide()
-            } else {
-                $("#signInButton").show()
-                setTimeout(
-                    () => {
-                        if (!localStorage.accessToken && !localStorage.userCanceledLogin ) {
-                            signInWithGoogle(false)
-                        }
+                        "idToken": idToken
                     },
-                    24 * 1000
-                )
+                    function loginResultHandler(result) {
+                        if (result.success) {
+                            localStorage.accessToken = result.data.accessToken
+                            localStorage.userAvatar = result.data.userAvatar
+                            localStorage.userName = result.data.userName
+                            loadUserAvatarAndNameFormLocalStorage2ShowInNavBar()
+                        } else {
+                            localStorage.removeItem('accessToken')
+                        }
+                    }
+                ).always(() => {
+                    $('#signInSpinner').hide()
+                })
             }
-        }
-    </script>
-</div>
+    
+            function onGapiLoad() {
+                gapi.load('auth2', () => {
+                    var auth2 = gapi.auth2.init({
+                        client_id: '1093205252929-r3fj3lliprgso4nrbtan10ugl4d7a1cl.apps.googleusercontent.com'
+                    })
+                    auth2.attachClickHandler('signInButton', {}, 
+                        (googleUser) => {
+                            useGoogleIdTokenForAuth(googleUser.getAuthResponse().id_token)
+                        }, 
+                        (error) => {
+                            switch (error.error) {
+                                case "popup_closed_by_user":
+                                    localStorage.userCanceledLogin = true
+                                    break
+                                default:
+                                    UIkit.modal.alert('谷歌登录操作失败, ' + error.error)
+                            }
+                        }
+                    )
+                })
+    
+                if (localStorage.accessToken) {
+                    $("#signInButton").hide()
+                } else {
+                    $("#signInButton").show()
+                }
+            }
+        </script>
+    
+    </div>
