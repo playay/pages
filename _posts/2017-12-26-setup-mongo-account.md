@@ -14,6 +14,11 @@ keywords: [ mongodb, account ]
 ### 没有密码
 刚装好的数据库默认不需要账号密码
 
+### 新建连接
+```sh
+docker exec -it mongo0 mongo admin
+```
+
 ### 新建 dba 用户
 要想给开发人员分配账号密码。首先，要创建一个 dba 用户。像这样: 
 
@@ -54,7 +59,9 @@ db.createUser(
 )
 ```
 
-### ..
-```sh
-docker exec -it mongo0 mongo admin
+
+### 删除用户
+```js
+db.dropUser('yonghuming')
 ```
+
