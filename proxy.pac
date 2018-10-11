@@ -1,6 +1,6 @@
-var http = "PROXY localhost:1087";
+//var http = "PROXY localhost:1087";
 
-var socks5 = "SOCKS5 localhost:1086";
+var socks5 = "SOCKS5 feling.net:2088";
 
 function FindProxyForURL(url, host) {
     if (shExpMatch(host,"*qunar*")
@@ -37,7 +37,8 @@ function FindProxyForURL(url, host) {
         || shExpMatch(host,"*weather*")
         || shExpMatch(host,"*amazonaws*")
         ) {
-        return socks5 + ";" + http; 
+        //return socks5 + ";" + http; 
+        return socks5; 
     }
 
     return "DIRECT"; 
