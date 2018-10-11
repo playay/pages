@@ -16,6 +16,7 @@ sslocal -c ssconf.json
 #### ssh
 
 ```
+ssh -gD 2088 -gqfnNC proxy.feling.io // 不用screen也行
 ssh -D 2088 -gqfnNC fqer@us.feling.net
 ```
 
