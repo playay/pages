@@ -1,6 +1,6 @@
 //var http = "PROXY localhost:1087";
 
-var socks5 = "SOCKS5 feling.net:2088";
+var socks5 = "SOCKS5 localhost:2088";
 
 function FindProxyForURL(url, host) {
     if (shExpMatch(host,"*qunar*")
