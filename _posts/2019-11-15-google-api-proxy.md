@@ -23,23 +23,26 @@ keywords: [nginx proxy]
 
 ### nginx 配置
 ```
-    location ~ ^/+(.*?)/ {
+location ~ ^/+(.*?)/ {
     # proxy_pass 中要修改 host 的话, 必须指定DNS解析, `cat /etc/resolv.conf` 查看配置
     resolver        100.100.2.136      100.100.2.138; 
 
     # location 中使用正则的话, proxy_pass 里就无法指定uri了, 所以用 rewrite 来指定
     rewrite         ^/+(.*?)/(.*)      /$2            break;
     proxy_pass      https://$1; 
-    }
+}
 ```
 
 ### 使用案例
 见 [这份代码](https://github.com/playay/loginWithGoogle/blob/master/src/main/java/io/feling/loginwithgoogle/api/LoginWithGoogle.java) 的第39行     
 
-访问 `https://proxy.feling.io/www.googleapis.com/oauth2/v3/tokeninfo?id_token=xxx` 的效果, 等价于访问 `https://www.googleapis.com/oauth2/v3/tokeninfo?id_token=`
+访问 `https://proxy.feling.io/www.googleapis.com/oauth2/v3/tokeninfo?id_token=xxx` 的效果,     
+等价于访问 `https://www.googleapis.com/oauth2/v3/tokeninfo?id_token=xxx`
 
 ### 资源共享
-基本上你可以随意的使用 `proxy.feling.io`, 它是一台在新加坡的服务器, 单核 1G内存 1M带宽, 2020-06-07 到期(基本上我是会续费的). 上面的 nginx 配置就跟文中给出的一致. 合理自用(反正也是吃灰的). 
+基本上, 你可以随意的使用 `proxy.feling.io`. (反正也是吃灰的, 大家合理自用吧).    
+上面的 nginx 配置就跟文中给出的一致.    
+它是一台在新加坡的服务器, 单核 1G内存 1M带宽, 2020-06-07 到期(基本上我是会续费的).    
 
 
 
