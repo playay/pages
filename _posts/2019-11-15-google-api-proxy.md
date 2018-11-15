@@ -3,7 +3,7 @@
 layout: post_with_left
 title: 海外接口代理
 tags: config
-update: 2018-11-015 22:54
+update: 2018-11-15 22:54
 keywords: [nginx proxy]
 
 ---
