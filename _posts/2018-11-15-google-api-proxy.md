@@ -40,7 +40,7 @@ location ~ ^/+(.*?)/ {
 等价于访问 `https://www.googleapis.com/oauth2/v3/tokeninfo?id_token=xxx`
 
 ### 资源共享
-基本上, 你可以随意的使用 `proxy.feling.io`. (反正也是吃灰的, 大家合理自用吧).    
+基本上, 你可以随意使用 `proxy.feling.io`. (反正也是吃灰的, 大家合理自用吧).    
 上面的 nginx 配置就跟文中给出的一致.    
 它是一台在新加坡的服务器, 单核 1G内存 1M带宽, 2020-06-07 到期(基本上我是会续费的).    
 
