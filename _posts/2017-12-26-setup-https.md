@@ -21,3 +21,29 @@ certbot certonly --manual \
 ```
 
 只能手动 renew 
+
+### xxx
+
+```
+➜ sg ~ 
+
+certbot --nginx
+
+ocarina-diary.com
+www.ocarina-diary.com
+```
+
+```
+➜ bj ~ 
+
+certbot certonly --manual \
+--expand -d "feling.io,*.feling.io,feling.net,*.feling.net" \
+--server https://acme-v02.api.letsencrypt.org/directory
+
+
+cat /etc/letsencrypt/live/feling.io-0001/fullchain.pem
+
+cat /etc/letsencrypt/live/feling.io-0001/privkey.pem
+
+阿里云 cdn
+```
