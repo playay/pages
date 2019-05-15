@@ -25,15 +25,6 @@ certbot certonly --manual \
 ### xxx
 
 ```
-➜ sg ~ 
-
-certbot --nginx
-
-ocarina-diary.com
-www.ocarina-diary.com
-```
-
-```
 ➜ bj ~ 
 
 certbot certonly --manual \
