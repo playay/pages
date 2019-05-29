@@ -36,5 +36,7 @@ cat /etc/letsencrypt/live/feling.io-0001/fullchain.pem
 
 cat /etc/letsencrypt/live/feling.io-0001/privkey.pem
 
+certbot --nginx # ocarina-diary.com
+
 阿里云 cdn
 ```
