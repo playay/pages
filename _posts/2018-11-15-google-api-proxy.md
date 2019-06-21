@@ -36,11 +36,11 @@ location ~ ^/+(.*?)/ {
 ### 使用案例
 见 [这份代码](https://github.com/playay/loginWithGoogle/blob/master/src/main/java/io/feling/loginwithgoogle/api/LoginWithGoogle.java) 的第39行     
 
-访问 `https://proxy.feling.io/www.googleapis.com/oauth2/v3/tokeninfo?id_token=xxx` 的效果,     
+访问 `https://proxy.feling.net/www.googleapis.com/oauth2/v3/tokeninfo?id_token=xxx` 的效果,     
 等价于访问 `https://www.googleapis.com/oauth2/v3/tokeninfo?id_token=xxx`
 
 ### 资源共享
-基本上, 你可以随意使用 `proxy.feling.io`. (反正也是吃灰的, 大家合理自用吧).    
+基本上, 你可以随意使用 `proxy.feling.net`. (反正也是吃灰的, 大家合理自用吧).    
 上面的 nginx 配置就跟文中给出的一致.    
 它是一台在新加坡的服务器, 单核 1G内存 1M带宽, 2020-06-07 到期(基本上我是会续费的).    
 
